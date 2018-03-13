@@ -1,3 +1,4 @@
+```
 1. CC Coordinating conjunction
 2. CD Cardinal number
 3. DT Determiner
@@ -34,9 +35,11 @@
 34. WP Wh­pronoun
 35. WP$ Possessive wh­pronoun
 36. WRB Wh­adverb
+```
 
-Explanation of each tag from the documentation :
+## Explanation of each tag from the documentation :
 
+```
 CC: conjunction, coordinating
     & 'n and both but either et for less minus neither nor or plus so
     therefore times v. versus vs. whether yet
@@ -157,7 +160,9 @@ WP$: WH-pronoun, possessive
     whose
 WRB: Wh-adverb
     how however whence whenever where whereby whereever wherein whereof why
+```
 
+```
 1. #
 2. $
 3. '' (used for all forms of closing quote)
@@ -167,5 +172,6 @@ WRB: Wh-adverb
 7. . (used for all sentence-ending punctuation)
 8. : (used for colons, semicolons and ellipses)
 9. `` (used for all forms of opening quote)
+```
 
 https://www.eecis.udel.edu/~vijay/cis889/ie/pos-set.pdf
