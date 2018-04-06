@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,13 +8,25 @@
 
     <EditText
         android:id="@+id/et_copy_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bt_proceed"
+        android:layout_alignParentTop="true"
         android:layout_margin="10dp"
+        android:background="@drawable/rectangle"
+        android:gravity="top"
+        android:hint="Enter Paragraph here..."
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/bt_proceed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="enter text here.."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Proceed >>"
+        android:textColor="#FFFFFF" />
 
-</LinearLayout>
+</RelativeLayout>
