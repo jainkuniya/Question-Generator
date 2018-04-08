@@ -2,3 +2,19 @@
 backend-pos/bin/
 *.class
 .DS_Store
+
+#server python Django
+*.egg-info
+*.pot
+*.py[co]
+.tox/
+__pycache__
+MANIFEST
+dist/
+docs/_build/
+docs/locale/
+node_modules/
+tests/coverage_html/
+tests/.coverage
+build/
+tests/report/
