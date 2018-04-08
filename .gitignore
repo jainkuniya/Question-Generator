@@ -1,3 +1,4 @@
 .metadata/
 backend-pos/bin/
 *.class
+.DS_Store
