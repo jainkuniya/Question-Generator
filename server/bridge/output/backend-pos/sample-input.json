@@ -1,1 +1,98 @@
-{"sentence_count":3}
+{
+  "sentence_count": 3,
+  "pos": {
+    "0": {
+      "sentence":
+        "A passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "pos": {
+        "0": { "tag": "DT", "word": "A" },
+        "1": { "tag": "NN", "word": "passenger" },
+        "2": { "tag": "NN", "word": "plane" },
+        "3": { "tag": "VBZ", "word": "has" },
+        "4": { "tag": "VBN", "word": "crashed" },
+        "5": { "tag": "RB", "word": "shortly" },
+        "6": { "tag": "IN", "word": "after" },
+        "7": { "tag": "NN", "word": "take-off" },
+        "8": { "tag": "IN", "word": "from" },
+        "9": { "tag": "NNP", "word": "Kyrgyzstan" },
+        "10": { "tag": "POS", "word": "'s" },
+        "11": { "tag": "NN", "word": "capital" },
+        "12": { "tag": ",", "word": "," },
+        "13": { "tag": "NNP", "word": "Bishkek" },
+        "14": { "tag": ",", "word": "," },
+        "15": { "tag": "VBG", "word": "killing" },
+        "16": { "tag": "DT", "word": "a" },
+        "17": { "tag": "JJ", "word": "large" },
+        "18": { "tag": "NN", "word": "number" },
+        "19": { "tag": "IN", "word": "of" },
+        "20": { "tag": "DT", "word": "those" },
+        "21": { "tag": "IN", "word": "on" },
+        "22": { "tag": "NN", "word": "board" },
+        "23": { "tag": ".", "word": "." }
+      },
+      "words_count": 24
+    },
+    "1": {
+      "sentence":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "pos": {
+        "0": { "tag": "DT", "word": "The" },
+        "1": { "tag": "NN", "word": "head" },
+        "2": { "tag": "IN", "word": "of" },
+        "3": { "tag": "NNP", "word": "Kyrgyzstan" },
+        "4": { "tag": "POS", "word": "'s" },
+        "5": { "tag": "JJ", "word": "civil" },
+        "6": { "tag": "NN", "word": "aviation" },
+        "7": { "tag": "NN", "word": "authority" },
+        "8": { "tag": "VBD", "word": "said" },
+        "9": { "tag": "IN", "word": "that" },
+        "10": { "tag": "IN", "word": "out" },
+        "11": { "tag": "IN", "word": "of" },
+        "12": { "tag": "IN", "word": "about" },
+        "13": { "tag": "CD", "word": "90" },
+        "14": { "tag": "NNS", "word": "passengers" },
+        "15": { "tag": "CC", "word": "and" },
+        "16": { "tag": "NN", "word": "crew" },
+        "17": { "tag": ",", "word": "," },
+        "18": { "tag": "RB", "word": "only" },
+        "19": { "tag": "IN", "word": "about" },
+        "20": { "tag": "CD", "word": "20" },
+        "21": { "tag": "NNS", "word": "people" },
+        "22": { "tag": "VBP", "word": "have" },
+        "23": { "tag": "VBN", "word": "survived" },
+        "24": { "tag": ".", "word": "." }
+      },
+      "words_count": 25
+    },
+    "2": {
+      "sentence":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "pos": {
+        "0": { "tag": "DT", "word": "The" },
+        "1": { "tag": "NNP", "word": "Itek" },
+        "2": { "tag": "NNP", "word": "Air" },
+        "3": { "tag": "NNP", "word": "Boeing" },
+        "4": { "tag": "CD", "word": "737" },
+        "5": { "tag": "VBD", "word": "took" },
+        "6": { "tag": "RP", "word": "off" },
+        "7": { "tag": "VBN", "word": "bound" },
+        "8": { "tag": "IN", "word": "for" },
+        "9": { "tag": "NNP", "word": "Mashhad" },
+        "10": { "tag": ",", "word": "," },
+        "11": { "tag": "IN", "word": "in" },
+        "12": { "tag": "JJ", "word": "north-eastern" },
+        "13": { "tag": "NNP", "word": "Iran" },
+        "14": { "tag": ",", "word": "," },
+        "15": { "tag": "CC", "word": "but" },
+        "16": { "tag": "VBD", "word": "turned" },
+        "17": { "tag": "NN", "word": "round" },
+        "18": { "tag": "DT", "word": "some" },
+        "19": { "tag": "CD", "word": "10" },
+        "20": { "tag": "NNS", "word": "minutes" },
+        "21": { "tag": "RB", "word": "later" },
+        "22": { "tag": ".", "word": "." }
+      },
+      "words_count": 23
+    }
+  }
+}
