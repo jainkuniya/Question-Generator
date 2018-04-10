@@ -1,4 +1,4 @@
-package com.example.user.qapp;
+package com.example.user.qapp.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.user.qapp.R;
 import com.example.user.qapp.utils.FileGenerator;
 
 import java.io.IOException;
