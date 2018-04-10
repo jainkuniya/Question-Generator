@@ -25,7 +25,7 @@ public class FileGenerator {
             path.mkdir();
         }
 
-        fileName= FileNameGenerator.generateFromIEMIAndTimeStamp(context);
+        fileName= FileNameGenerator.generateFromIEMIAndTimeStamp(context) + ".txt";
         file = new File(path,fileName);
         FileWriter stream = new FileWriter(file);
         try {
