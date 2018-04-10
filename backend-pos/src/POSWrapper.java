@@ -9,10 +9,11 @@ import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
+
 public class POSWrapper {
   
 	public static void main(String[] args) throws Exception {
-		if (args.length != 1) {
+		if (args.length != 2) {
 			System.out.println("Invalid Params: Include input file path");
 			return;
 		}
@@ -29,13 +30,15 @@ public class POSWrapper {
 	    
 	    JSONObject output = new JSONObject();
 	    output.put("sentence_count", sentences.size());
-	    	    
+	    new FileUtils().createOutputFile(args[1], output.toJSONString());
 	    for (List<HasWord> sentence : sentences) {
 	      List<TaggedWord> tSentence = tagger.tagSentence(sentence);
 	      System.out.println("\nStarting new line");
 	      for (TaggedWord taggedWord: tSentence) {
 	    	  System.out.println(taggedWord.tag()+" " + taggedWord.word());
 	      }
-	    }	
+	    }
+	    
+	    
 	}
 }
