@@ -19,9 +19,8 @@ import retrofit2.Retrofit;
  */
 
 public class UploadFile {
-    String fileName;
 
-    public void upload_file(File file, String title) {
+    public void uploadFile(File file, String title) {
 
         CreateRetrofit cr = new CreateRetrofit();
 
@@ -31,7 +30,7 @@ public class UploadFile {
         MultipartBody.Part filePart = MultipartBody.Part.createFormData("file", file.getName(), RequestBody.create(MediaType.parse("text/*"), file));
         RequestBody filenm =
                 RequestBody.create(
-                        MediaType.parse("multipart/form-data"), fileName);
+                        MediaType.parse("multipart/form-data"), title);
 
 
         Call<Result> uploadfileserver = service.uploadFile(filePart, filenm);
