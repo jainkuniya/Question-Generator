@@ -13,20 +13,22 @@ import java.io.IOException;
  */
 
 public class FileGenerator {
-    File path,file;
+    File path, file;
     Context context;
     String fileName;
-    public FileGenerator(Context context){
-        this.context=context;
+
+    public FileGenerator(Context context) {
+        this.context = context;
     }
+
     public void createFile(String data) throws IOException {
-        path = new File(context.getFilesDir(),"QApp");
-        if(!path.exists()){
+        path = new File(context.getFilesDir(), "QApp");
+        if (!path.exists()) {
             path.mkdir();
         }
 
-        fileName= FileNameGenerator.generateFromIEMIAndTimeStamp(context) + ".txt";
-        file = new File(path,fileName);
+        fileName = FileNameGenerator.generateFromIEMIAndTimeStamp(context) + ".txt";
+        file = new File(path, fileName);
         FileWriter stream = new FileWriter(file);
         try {
             stream.append(data);
@@ -35,11 +37,12 @@ public class FileGenerator {
         } finally {
             stream.close();
         }
-       // sendFile();
+        // sendFile();
     }
-    public void sendFile(){
-        UploadFile up=new UploadFile();
-        up.upload_file(file,fileName);
+
+    public void sendFile() {
+        UploadFile up = new UploadFile();
+        up.upload_file(file, fileName);
     }
 
 }

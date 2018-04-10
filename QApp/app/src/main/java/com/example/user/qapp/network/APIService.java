@@ -17,5 +17,5 @@ public interface APIService {
 
     @Multipart
     @POST("upload_file")
-    Call<Result> uploadFile(@Part MultipartBody.Part file, @Part("title") RequestBody  title);
+    Call<Result> uploadFile(@Part MultipartBody.Part file, @Part("title") RequestBody title);
 }
