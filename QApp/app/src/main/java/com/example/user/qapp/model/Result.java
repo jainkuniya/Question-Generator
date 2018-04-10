@@ -1,4 +1,4 @@
-package com.example.user.qapp.Model;
+package com.example.user.qapp.model;
 
 /**
  * Created by user on 10/4/18.

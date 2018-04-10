@@ -1,6 +1,6 @@
-package com.example.user.qapp.Utility;
+package com.example.user.qapp.network;
 
-import com.example.user.qapp.Model.Result;
+import com.example.user.qapp.model.Result;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
