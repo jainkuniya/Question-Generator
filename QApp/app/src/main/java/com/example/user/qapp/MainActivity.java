@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.user.qapp.utility.FileGenerator;
+import com.example.user.qapp.utils.FileGenerator;
 
 import java.io.IOException;
 

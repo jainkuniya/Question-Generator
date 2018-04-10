@@ -1,4 +1,4 @@
-package com.example.user.qapp.utility;
+package com.example.user.qapp.utils;
 
 import android.Manifest;
 import android.content.Context;
