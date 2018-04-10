@@ -13,7 +13,7 @@ SUCCESS_CODE = 1
 INVALID_REQUEST_CODE = -99
 
 def index(request):
-    return HttpResponse(subprocess.check_output(['java', '-Dfile.encoding=UTF-8', '-classpath', '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar', 'POSWrapper']))
+    return HttpResponse(subprocess.check_output(['java', '-Dfile.encoding=UTF-8', '-classpath', '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar', 'POSWrapper', '../backend-pos/sample-input.txt']))
 
 @csrf_exempt
 def upload_file(request):
