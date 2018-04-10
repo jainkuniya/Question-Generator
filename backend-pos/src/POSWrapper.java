@@ -3,6 +3,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.List;
 
+import org.json.simple.JSONObject;
+
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
@@ -24,6 +26,8 @@ public class POSWrapper {
 		}
 	    MaxentTagger tagger = new MaxentTagger("../backend-pos/models/english-left3words-distsim.tagger");
 	    List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new BufferedReader(fileReader));
+	    
+	    JSONObject output = new JSONObject();
 	    for (List<HasWord> sentence : sentences) {
 	      List<TaggedWord> tSentence = tagger.tagSentence(sentence);
 	      System.out.println("\nStarting new line");

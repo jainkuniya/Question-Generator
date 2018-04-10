@@ -14,7 +14,7 @@ INVALID_REQUEST_CODE = -99
 INPUT_FILE_PATH = './bridge/uploads/'
 
 def index(request):
-    return HttpResponse(subprocess.check_output(['java', '-Dfile.encoding=UTF-8', '-classpath', '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar', 'POSWrapper', '../backend-pos/sample-input.txt']))
+    return HttpResponse(subprocess.check_output(['java', '-Dfile.encoding=UTF-8', '-classpath', '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar:../backend-pos/json-simple-1.1.1.jar', 'POSWrapper', '../backend-pos/sample-input.txt']))
 
 @csrf_exempt
 def upload_file(request):
@@ -26,7 +26,7 @@ def upload_file(request):
             data = {
                 'success': SUCCESS_CODE,
                 'message': 'Successfully uploaded',
-                'output': subprocess.check_output(['java', '-Dfile.encoding=UTF-8', '-classpath', '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar', 'POSWrapper', INPUT_FILE_PATH + input_file_name])
+                'output': subprocess.check_output(['java', '-Dfile.encoding=UTF-8', '-classpath', '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar:../backend-pos/json-simple-1.1.1.jar', 'POSWrapper', INPUT_FILE_PATH + input_file_name])
             }
     else:
         data = {
