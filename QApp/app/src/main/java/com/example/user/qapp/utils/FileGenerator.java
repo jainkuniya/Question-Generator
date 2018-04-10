@@ -24,8 +24,8 @@ public class FileGenerator {
         if(!path.exists()){
             path.mkdir();
         }
-        FileNameGenerator fg=new FileNameGenerator(context);
-        fileName=fg.generate();
+
+        fileName= FileNameGenerator.generateFromIEMIAndTimeStamp(context);
         file = new File(path,fileName);
         FileWriter stream = new FileWriter(file);
         try {

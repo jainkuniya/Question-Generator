@@ -21,7 +21,7 @@ import retrofit2.Retrofit;
 public class UploadFile {
     String fileName;
 
-    public void upload_file(File file,String title) {
+    public void upload_file(File file, String title) {
 
         CreateRetrofit cr = new CreateRetrofit();
 
@@ -53,7 +53,7 @@ public class UploadFile {
 
             @Override
             public void onFailure(Call<Result> call, Throwable t) {
-                Log.d("onFailure upload" , t.toString());
+                Log.d("onFailure upload", t.toString());
             }
         });
     }
