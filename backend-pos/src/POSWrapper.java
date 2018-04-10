@@ -28,6 +28,8 @@ public class POSWrapper {
 	    List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new BufferedReader(fileReader));
 	    
 	    JSONObject output = new JSONObject();
+	    output.put("sentence_count", sentences.size());
+	    	    
 	    for (List<HasWord> sentence : sentences) {
 	      List<TaggedWord> tSentence = tagger.tagSentence(sentence);
 	      System.out.println("\nStarting new line");
