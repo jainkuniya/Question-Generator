@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class CreateRetrofit {
     public Retrofit create() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.56.1:8000/").addConverterFactory(GsonConverterFactory.create())
+                .baseUrl("http://localhost:8000/").addConverterFactory(GsonConverterFactory.create())
                 .build();
         return retrofit;
     }

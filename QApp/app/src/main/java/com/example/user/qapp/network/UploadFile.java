@@ -1,6 +1,8 @@
 package com.example.user.qapp.network;
 
+import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.example.user.qapp.model.Result;
 
@@ -19,9 +21,8 @@ import retrofit2.Retrofit;
  */
 
 public class UploadFile {
-    String fileName;
 
-    public void upload_file(File file,String title) {
+    public void uploadFile(final Context context, File file, String title) {
 
         CreateRetrofit cr = new CreateRetrofit();
 
@@ -31,7 +32,7 @@ public class UploadFile {
         MultipartBody.Part filePart = MultipartBody.Part.createFormData("file", file.getName(), RequestBody.create(MediaType.parse("text/*"), file));
         RequestBody filenm =
                 RequestBody.create(
-                        MediaType.parse("multipart/form-data"), fileName);
+                        MediaType.parse("multipart/form-data"), title);
 
 
         Call<Result> uploadfileserver = service.uploadFile(filePart, filenm);
@@ -39,6 +40,8 @@ public class UploadFile {
         uploadfileserver.enqueue(new Callback<Result>() {
             @Override
             public void onResponse(Call<Result> call, Response<Result> response) {
+                Toast.makeText(context, "Successfully uploaded to server.", Toast.LENGTH_SHORT).show();
+
                 Result result = response.body();
                 String res = result.getMsg();
 
@@ -53,7 +56,8 @@ public class UploadFile {
 
             @Override
             public void onFailure(Call<Result> call, Throwable t) {
-                Log.d("onFailure upload" , t.toString());
+                Log.d("onFailure upload", t.toString());
+                Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
             }
         });
     }
