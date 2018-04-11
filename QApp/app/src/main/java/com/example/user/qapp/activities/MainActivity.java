@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Log.i("MainActivity", "File created");
                     //upload file
                     UploadFile up = new UploadFile();
-                    up.uploadFile(file, fileName);
+                    up.uploadFile(this,file, fileName);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
