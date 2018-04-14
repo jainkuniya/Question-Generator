@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">QApp</string>
+
     <string name="enter_paragraph_here">Enter Paragraph here...</string>
     <string name="proceed"><![CDATA[Proceed >>]]></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -39,6 +39,7 @@ public class UploadFile {
 
         uploadfileserver.enqueue(new Callback<UploadFileResponse>() {
             @Override
+
             public void onResponse(Call<UploadFileResponse> call, Response<UploadFileResponse> response) {
 
                 UploadFileResponse uploadFileResponse = response.body();
@@ -54,12 +55,11 @@ public class UploadFile {
                     Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
                 }
             }
-
-            @Override
             public void onFailure(Call<UploadFileResponse> call, Throwable t) {
                 Log.d("onFailure upload", t.toString());
                 Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
             }
+                
         });
     }
 }
