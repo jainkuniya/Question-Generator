@@ -1,7 +1,0 @@
-Android uses a file system that's similar to disk-based file systems on other platforms. This page describes how to work with the Android file system to read and write files with the File APIs.
-
-A File object works well for reading or writing large amounts of data in start-to-finish order without skipping around. For example, it's good for image files or anything exchanged over a network.
-
-The exact location of the where your files can be saved might vary across devices, so you should use the methods described on this page to access internal and external storage paths instead of using absolute file paths.
-
-To view files on a device, you can log the file location provided by methods such as File.getAbsolutePath(), and then browse the device files with Android Studio's Device File Explorer.

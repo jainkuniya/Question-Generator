@@ -30,7 +30,12 @@ public class POSWrapper {
 
 		JSONObject output = new JSONObject();
 		output.put("sentence_count", sentences.size());
-
+		
+		//read file 
+		String para = FileUtils.readLineByLineJava8(args[0]);
+		
+		output.put("period_count", para.chars().filter(num -> num == '.').count());
+		
 		JSONObject pos = new JSONObject();
 		
 		for (int i=0; i<sentences.size(); i++) {
