@@ -10,6 +10,7 @@ import subprocess
 from .forms import UploadFileForm
 
 from .utils import get_parsed_object
+from .question_generator import generate_questions
 
 SUCCESS_CODE = 1
 INVALID_REQUEST_CODE = -99
@@ -26,8 +27,8 @@ POS_CLASS = 'POSWrapper'
 def index(request):
     subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, '../backend-pos/sample-input.txt', OUTPUT_FILE_PATH + 'sample-input' + '.json'])
     parsed_object = get_parsed_object(OUTPUT_FILE_PATH + 'sample-input' + '.json')
-    print (parsed_object)
-    return HttpResponse("Hi, welcome to server")
+    response = generate_questions(parsed_object)
+    return HttpResponse("Hi, welcome to server " + response)
 
 @csrf_exempt
 def upload_file(request):
