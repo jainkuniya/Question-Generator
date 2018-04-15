@@ -9,6 +9,8 @@ import subprocess
 
 from .forms import UploadFileForm
 
+from .utils import get_parsed_object
+
 SUCCESS_CODE = 1
 INVALID_REQUEST_CODE = -99
 
@@ -22,7 +24,10 @@ JAR_PATH = '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar:../ba
 POS_CLASS = 'POSWrapper'
 
 def index(request):
-    return HttpResponse(subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, '../backend-pos/sample-input.txt', OUTPUT_FILE_PATH + 'sample-input' + '.json']))
+    subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, '../backend-pos/sample-input.txt', OUTPUT_FILE_PATH + 'sample-input' + '.json'])
+    parsed_object = get_parsed_object(OUTPUT_FILE_PATH + 'sample-input' + '.json')
+    print (parsed_object)
+    return HttpResponse("Hi, welcome to server")
 
 @csrf_exempt
 def upload_file(request):
