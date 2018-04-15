@@ -28,7 +28,12 @@ def index(request):
     subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, '../backend-pos/sample-input.txt', OUTPUT_FILE_PATH + 'sample-input' + '.json'])
     parsed_object = get_parsed_object(OUTPUT_FILE_PATH + 'sample-input' + '.json')
     response = generate_questions(parsed_object)
-    return HttpResponse("Hi, welcome to server " + response)
+    data = {
+            'success': SUCCESS_CODE,
+            'message': '',
+            'questions': response
+        }
+    return JsonResponse(data, safe=True)
 
 @csrf_exempt
 def upload_file(request):
