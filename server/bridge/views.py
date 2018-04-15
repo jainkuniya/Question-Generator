@@ -11,11 +11,18 @@ from .forms import UploadFileForm
 
 SUCCESS_CODE = 1
 INVALID_REQUEST_CODE = -99
+
 INPUT_FILE_PATH = './bridge/uploads/'
 OUTPUT_FILE_PATH = './bridge/output/backend-pos/'
 
+JAVA_PATH = 'java'
+ENCODING = '-Dfile.encoding=UTF-8'
+CLASSPATH = '-classpath'
+JAR_PATH = '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar:../backend-pos/json-simple-1.1.1.jar'
+POS_CLASS = 'POSWrapper'
+
 def index(request):
-    return HttpResponse(subprocess.check_output(['java', '-Dfile.encoding=UTF-8', '-classpath', '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar:../backend-pos/json-simple-1.1.1.jar', 'POSWrapper', '../backend-pos/sample-input.txt', OUTPUT_FILE_PATH + 'sample-input' + '.json']))
+    return HttpResponse(subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, '../backend-pos/sample-input.txt', OUTPUT_FILE_PATH + 'sample-input' + '.json']))
 
 @csrf_exempt
 def upload_file(request):
@@ -27,7 +34,7 @@ def upload_file(request):
             data = {
                 'success': SUCCESS_CODE,
                 'message': 'Successfully uploaded',
-                'output': subprocess.check_output(['java', '-Dfile.encoding=UTF-8', '-classpath', '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar:../backend-pos/json-simple-1.1.1.jar', 'POSWrapper', INPUT_FILE_PATH + input_file_name, OUTPUT_FILE_PATH + input_file_name + '.json'])
+                'output': subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, INPUT_FILE_PATH + input_file_name, OUTPUT_FILE_PATH + input_file_name + '.json'])
             }
     else:
         data = {
