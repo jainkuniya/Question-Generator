@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.user.qapp.model.Result;
+import com.example.user.qapp.model.UploadFileResponse;
 
 import java.io.File;
 
@@ -35,27 +35,30 @@ public class UploadFile {
                         MediaType.parse("multipart/form-data"), title);
 
 
-        Call<Result> uploadfileserver = service.uploadFile(filePart, filenm);
+        Call<UploadFileResponse> uploadfileserver = service.uploadFile(filePart, filenm);
 
-        uploadfileserver.enqueue(new Callback<Result>() {
+        uploadfileserver.enqueue(new Callback<UploadFileResponse>() {
             @Override
-            public void onResponse(Call<Result> call, Response<Result> response) {
-                Toast.makeText(context, "Successfully uploaded to server.", Toast.LENGTH_SHORT).show();
+            public void onResponse(Call<UploadFileResponse> call, Response<UploadFileResponse> response) {
 
-                Result result = response.body();
-                String res = result.getMsg();
+                UploadFileResponse uploadFileResponse = response.body();
+                int status = uploadFileResponse.getSuccess();
 
-
-                Log.d("onResponse upload", "" + response.code() +
-                        "  response body " + response.body() +
-                        " responseError " + response.errorBody() + " responseMessage " +
-                        response.message());
-
-
+                if (response.code() == 200) {
+                    if (status == 1) {
+                        //send to next activity
+                        //send questions via intent or singleton
+                        Toast.makeText(context, "Successfully uploaded to server.", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(context, "Something went wrong. Please try again.", Toast.LENGTH_SHORT).show();
+                    }
+                }else {
+                    Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
-            public void onFailure(Call<Result> call, Throwable t) {
+            public void onFailure(Call<UploadFileResponse> call, Throwable t) {
                 Log.d("onFailure upload", t.toString());
                 Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
             }
