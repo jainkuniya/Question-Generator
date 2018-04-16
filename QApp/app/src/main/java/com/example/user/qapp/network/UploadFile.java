@@ -48,11 +48,9 @@ public class UploadFile {
                     if (status == 1) {
                         //send to next activity
                         //send questions via intent or singleton
-                        Toast.makeText(context, "Successfully uploaded to server.", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(context, "Something went wrong. Please try again.", Toast.LENGTH_SHORT).show();
                     }
-                }else {
+                    Toast.makeText(context, uploadFileResponse.getMessage(), Toast.LENGTH_SHORT).show();
+                } else {
                     Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
                 }
             }

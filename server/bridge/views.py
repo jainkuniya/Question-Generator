@@ -42,10 +42,13 @@ def upload_file(request):
         input_file_name = get_file_name_and_extension(request.POST['title'])[0]
         if form.is_valid():
             handle_uploaded_file(request.FILES['file'], input_file_name)
+            subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, INPUT_FILE_PATH + input_file_name, OUTPUT_FILE_PATH + input_file_name + '.json'])
+            parsed_object = get_parsed_object(OUTPUT_FILE_PATH + input_file_name + '.json')
+            response = generate_questions(parsed_object)
             data = {
                 'success': SUCCESS_CODE,
                 'message': 'Successfully uploaded',
-                'output': subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, INPUT_FILE_PATH + input_file_name, OUTPUT_FILE_PATH + input_file_name + '.json'])
+                'questions': response
             }
     else:
         data = {
