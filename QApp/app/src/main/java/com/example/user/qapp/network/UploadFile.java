@@ -59,7 +59,7 @@ public class UploadFile {
                 Log.d("onFailure upload", t.toString());
                 Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
             }
-                
+
         });
     }
 }
