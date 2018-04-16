@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">QApp</string>
+    <string name="enter_paragraph_here">Enter Paragraph here...</string>
+    <string name="proceed"><![CDATA[Proceed >>]]></string>
 </resources>

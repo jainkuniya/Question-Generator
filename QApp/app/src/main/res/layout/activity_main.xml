@@ -15,8 +15,8 @@
         android:layout_margin="10dp"
         android:background="@drawable/rectangle"
         android:gravity="top"
-        android:hint="Enter Paragraph here..."
-        android:inputType="text"
+        android:hint="@string/enter_paragraph_here"
+        android:inputType="textMultiLine"
         android:padding="8dp" />
 
     <Button
@@ -26,7 +26,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="10dp"
         android:background="@color/colorPrimaryDark"
-        android:text="Proceed >>"
+        android:text="@string/proceed"
         android:textColor="#FFFFFF" />
 
 </RelativeLayout>
