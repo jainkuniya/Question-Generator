@@ -24,10 +24,10 @@ CLASSPATH = '-classpath'
 JAR_PATH = '../backend-pos/bin:../backend-pos/stanford-postagger-3.9.1.jar:../backend-pos/json-simple-1.1.1.jar'
 POS_CLASS = 'POSWrapper'
 
-def index(request):
-    subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, '../backend-pos/sample-input.txt', OUTPUT_FILE_PATH + 'sample-input' + '.json'])
-    parsed_object = get_parsed_object(OUTPUT_FILE_PATH + 'sample-input' + '.json')
-    response = generate_questions(parsed_object)
+def index(request):    
+    subprocess.check_output([JAVA_PATH, ENCODING, CLASSPATH, JAR_PATH, POS_CLASS, '../backend-pos/sample-input.txt', OUTPUT_FILE_PATH + 'sample-input' + '.json'])   
+    parsed_object = get_parsed_object(OUTPUT_FILE_PATH + 'sample-input' + '.json')    
+    response = generate_questions(parsed_object)   
     data = {
             'success': SUCCESS_CODE,
             'message': '',
