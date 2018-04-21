@@ -1,5 +1,6 @@
 package com.example.user.qapp.network;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
@@ -21,8 +22,17 @@ import retrofit2.Retrofit;
  */
 
 public class UploadFile {
-
+    ProgressDialog progressDialog;
     public void uploadFile(final Context context, File file, String title) {
+        progressDialog = new ProgressDialog(context);
+        progressDialog.setMessage("Loading...");
+        progressDialog.setTitle("Generating Questions");
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+
+
+        progressDialog.show();
+
+        progressDialog.setCancelable(false);
 
         CreateRetrofit cr = new CreateRetrofit();
 
@@ -51,6 +61,7 @@ public class UploadFile {
                         //send questions via intent or singleton
                     }
                     Toast.makeText(context, uploadFileResponse.getMessage(), Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
                 } else {
                     Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
                 }

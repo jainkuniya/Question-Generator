@@ -35,10 +35,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         proceed.setOnClickListener(this);
     }
 
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bt_proceed:
+
                 copiedText = copyText.getText().toString();
                 String fileName = FileNameGenerator.generateFromIEMIAndTimeStamp(context) + ".txt";
                 try {
@@ -48,9 +50,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     //upload file
                     UploadFile up = new UploadFile();
                     up.uploadFile(this,file, fileName);
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
 
         }
 
