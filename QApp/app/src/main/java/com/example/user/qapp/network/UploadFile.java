@@ -61,13 +61,15 @@ public class UploadFile {
                         //send questions via intent or singleton
                     }
                     Toast.makeText(context, uploadFileResponse.getMessage(), Toast.LENGTH_SHORT).show();
-                    progressDialog.dismiss();
+
                 } else {
                     Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
                 }
+                progressDialog.dismiss();
             }
             public void onFailure(Call<UploadFileResponse> call, Throwable t) {
                 Log.d("onFailure upload", t.toString());
+                progressDialog.dismiss();
                 Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
             }
 

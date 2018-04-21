@@ -11,11 +11,14 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.user.qapp.R;
 import com.example.user.qapp.fragments.MCQFragment;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class QuestionsActivity extends AppCompatActivity {
 
     private static final int NUM_PAGES = 5;
 
-    private ViewPager mPager;
+    @BindView(R.id.view_pager) private ViewPager mPager;
 
 
     private PagerAdapter mPagerAdapter;
@@ -24,9 +27,8 @@ public class QuestionsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
+        ButterKnife.bind(this);
 
-        // Instantiate a ViewPager and a PagerAdapter.
-        mPager = (ViewPager) findViewById(R.id.view_pager);
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
     }

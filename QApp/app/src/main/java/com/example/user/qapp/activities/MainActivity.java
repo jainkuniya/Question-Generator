@@ -16,11 +16,17 @@ import com.example.user.qapp.utils.FileNameGenerator;
 import java.io.File;
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button proceed;
-    EditText copyText;
-    String copiedText;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
+public class MainActivity extends AppCompatActivity {
+    @BindView(R.id.et_copy_text)
+    EditText copyText;
+    @BindView(R.id.bt_proceed)
+    Button proceed;
+
+    String copiedText;
     Context context;
 
 
@@ -28,18 +34,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context = MainActivity.this;
-
         setContentView(R.layout.activity_main);
-        proceed = (Button) findViewById(R.id.bt_proceed);
-        copyText = (EditText) findViewById(R.id.et_copy_text);
-        proceed.setOnClickListener(this);
+        ButterKnife.bind(this);
+
     }
 
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.bt_proceed:
+  @OnClick(R.id.bt_proceed)
+    public void proceed(View view) {
+
+
 
                 copiedText = copyText.getText().toString();
                 String fileName = FileNameGenerator.generateFromIEMIAndTimeStamp(context) + ".txt";
@@ -60,4 +64,3 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-}
