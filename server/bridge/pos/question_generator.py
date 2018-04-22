@@ -7,6 +7,6 @@ KEY_PERIOD_COUNT = "period_count"
 def get_questions(parsed_data):
 	questions = [
 		get_sentence_count_qustion(parsed_data[KEY_SENTENCE_COUNT], parsed_data[KEY_PERIOD_COUNT]),
-		get_pos_questions(parsed_data)
 		]
+	questions.extend(get_pos_questions(parsed_data))
 	return [x for x in questions if x is not None]
