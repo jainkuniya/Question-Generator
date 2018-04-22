@@ -1,5 +1,8 @@
+import json
 import random
 from random import randint
+
+from bridge.models import WordWithTag
 
 from bridge.template.multiple_choice_question import generate_multiple_choice_question
 from .pos_abbrevations import POS_ABBREVATIONS
@@ -68,12 +71,47 @@ def get_pos_identify_true_false_questions(parsed_data, sentence):
                     )
     return questions
 
+def get_pos_fill_in_the_blanks_questions(parsed_data, sentence):
+    questions = []
+    for key, value in parsed_data.iteritems():
+        # get POS from map
+        tag = POS_ABBREVATIONS.get(value[KEY_TAG])
+        if tag is None:
+            continue
+        answer = value[KEY_WORD]
+        options = []
+        other_words = WordWithTag.objects.filter(tag=value[KEY_TAG]).exclude(word=answer)
+        if (len(other_words) < 3):
+            continue
+        for ow in other_words:
+            options.append(str(ow.word))
+        random.shuffle(options)
+        options = options[0:3]
+        options.append(answer)
+        random.shuffle(options)
+        question_sentence = "Select appropiate " + tag + " from the following to fill the black in the sentence."
+        explanation = answer + " is " + tag
+        words_in_sentence = sentence.split(' ')
+        sentence_with_blank = " ".join(words_in_sentence[0:int(key)]) + " _____________ " + " ".join(words_in_sentence[int(key)+1:len(words_in_sentence)-1])
+        questions.append(
+                generate_multiple_choice_question(
+                         question_sentence,
+                         options.index(answer),
+                         options,
+                         sentence_with_blank,
+                         explanation,
+                         )
+                    )
+    return questions
+
 def get_pos_questions_from_sentence(parsed_data, sentence):
     questions = []
     # get identify POS questions
     questions.extend(get_pos_identify_questions(parsed_data, sentence))
     # get identify POS True, False questions
     questions.extend(get_pos_identify_true_false_questions(parsed_data, sentence))
+    # get pos fill in the blanks questions
+    questions.extend(get_pos_fill_in_the_blanks_questions(parsed_data, sentence))
     return questions
 
 def get_pos_questions(parsed_data):
