@@ -1,0 +1,1602 @@
+{
+  "message": "",
+  "questions": [
+    {
+      "answer": 3,
+      "question": "How many sentences are there in this paragraph?",
+      "question_type": 1
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Cardinal number.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["passengers", "out", "said", "20"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural Noun.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["20", "people", "of", "Kyrgyzstan"]
+    },
+    {
+      "explanation": "",
+      "question":
+        "In the following sentence identify Verb (non 3rd person singular present tense).",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["have", "of", "authority", "Kyrgyzstan"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Verb (past participle).",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["of", "head", "out", "survived"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["head", "about", "only", "The"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Determiner.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["crew", "of", "The", "that"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["Kyrgyzstan", "90", "survived", "of"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["'s", "passengers", "have", "of"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Adjective.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["Kyrgyzstan", "90", "civil", "about"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Possessive ending.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["people", "crew", "about", "'s"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["authority", "people", "and", "Kyrgyzstan"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["'s", "aviation", "20", "survived"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["90", "head", "civil", "that"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Verb (past tense).",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["Kyrgyzstan", "only", "said", "aviation"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["said", "20", "survived", "of"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["passengers", "out", "The", "'s"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Cardinal number.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["head", "90", "civil", "crew"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["authority", "Kyrgyzstan", "crew", "about"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Coordinating conjunction.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["'s", "have", "passengers", "and"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural Noun.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["20", "passengers", "that", "about"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["passengers", "The", "about", "crew"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["'s", "Kyrgyzstan", "only", "about"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Adverb.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["only", "The", "of", "that"]
+    },
+    {
+      "explanation": "20 is Cardinal number",
+      "question": "Is 20, Foreign word in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "people is Pural Noun",
+      "question": "Is people, Preposition or subordinating conjunction in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "have is Verb (non 3rd person singular present tense)",
+      "question": "Is have, Cardinal number in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "survived is Verb (past participle)",
+      "question": "Is survived, Coordinating conjunction in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "head is Singular or mass Noun",
+      "question": "Is head, Superlative Adjective in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "The is Determiner",
+      "question": "Is The, Determiner in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Kyrgyzstan is Pural singular Noun",
+      "question": "Is Kyrgyzstan, Pural singular Noun in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "of is Preposition or subordinating conjunction",
+      "question": "Is of, Verb (present participle) in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "civil is Adjective",
+      "question": "Is civil, Adjective in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "'s is Possessive ending",
+      "question": "Is 's, Possessive ending in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "authority is Singular or mass Noun",
+      "question": "Is authority, Singular or mass Noun in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "aviation is Singular or mass Noun",
+      "question": "Is aviation, Pural singular Noun in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "that is Preposition or subordinating conjunction",
+      "question": "Is that, Comparative Adverb in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "said is Verb (past tense)",
+      "question": "Is said, Verb (past tense) in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "of is Preposition or subordinating conjunction",
+      "question": "Is of, WH-determiner in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "out is Preposition or subordinating conjunction",
+      "question": "Is out, Preposition or subordinating conjunction in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "90 is Cardinal number",
+      "question": "Is 90, Singular or mass Noun in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "about is Preposition or subordinating conjunction",
+      "question": "Is about, Comparative Adverb in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "and is Coordinating conjunction",
+      "question": "Is and, Coordinating conjunction in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "passengers is Pural Noun",
+      "question": "Is passengers, Pural plural Noun in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "crew is Singular or mass Noun",
+      "question": "Is crew, Singular or mass Noun in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "about is Preposition or subordinating conjunction",
+      "question": "Is about, Preposition or subordinating conjunction in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "only is Adverb",
+      "question": "Is only, Adverb in the following sentence?",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "20 is Cardinal number",
+      "question":
+        "Select appropiate Cardinal number from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about _____________ people have survived .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["737", "10", "90", "20"]
+    },
+    {
+      "explanation": "head is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The _____________ of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["board", "head", "round", "capital"]
+    },
+    {
+      "explanation": "The is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension":
+        " _____________ head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["those", "a", "some", "The"]
+    },
+    {
+      "explanation": "Kyrgyzstan is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of _____________ 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["Kyrgyzstan", "Boeing", "Bishkek", "Mashhad"]
+    },
+    {
+      "explanation": "of is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head _____________ Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["of", "for", "from", "out"]
+    },
+    {
+      "explanation": "authority is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation _____________ said that out of about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["take-off", "round", "authority", "head"]
+    },
+    {
+      "explanation": "aviation is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil _____________ authority said that out of about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["aviation", "passenger", "board", "crew"]
+    },
+    {
+      "explanation": "that is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said _____________ out of about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["from", "that", "out", "on"]
+    },
+    {
+      "explanation": "of is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out _____________ about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["in", "about", "of", "for"]
+    },
+    {
+      "explanation": "out is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that _____________ of about 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["of", "about", "after", "out"]
+    },
+    {
+      "explanation": "90 is Cardinal number",
+      "question":
+        "Select appropiate Cardinal number from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about _____________ passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["737", "20", "10", "90"]
+    },
+    {
+      "explanation": "about is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of _____________ 90 passengers and crew , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["about", "after", "in", "of"]
+    },
+    {
+      "explanation": "crew is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and _____________ , only about 20 people have survived .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["passenger", "authority", "crew", "capital"]
+    },
+    {
+      "explanation": "about is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "The head of Kyrgyzstan 's civil aviation authority said that out of about 90 passengers and crew , only _____________ 20 people have survived .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["about", "on", "out", "after"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["of", "Dr.", "capital", "large"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Determiner.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["Ram", "crashed", "take-off", "those"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["take-off", "on", "'s", "capital"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["board", "large", "shortly", "a"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["board", "crashed", "Ram", "take-off"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["Dr.", "after", "board", "has"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["Ram", "killing", "Dr.", "plane"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["passenger", "Kyrgyzstan", "crashed", "shortly"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Verb (past participle).",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["crashed", "large", "Dr.", "'s"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Verb (3rd person singular present tense).",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["has", "plane", "Bishkek", "board"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["number", "Kyrgyzstan", "after", "Ram"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Adverb.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["shortly", "those", "Bishkek", "a"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["number", "Bishkek", "from", "has"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["a", "'s", "take-off", "from"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Possessive ending.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["'s", "on", "a", "Ram"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["after", "board", "passenger", "Kyrgyzstan"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["Kyrgyzstan", "capital", "Bishkek", "shortly"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["crashed", "Bishkek", "board", "take-off"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Determiner.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["of", "board", "a", "on"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Verb (present participle).",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["killing", "capital", "of", "board"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["crashed", "a", "on", "number"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Adjective.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["those", "board", "take-off", "large"]
+    },
+    {
+      "explanation": "of is Preposition or subordinating conjunction",
+      "question": "Is of, Adjective in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "those is Determiner",
+      "question": "Is those, Determiner in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "on is Preposition or subordinating conjunction",
+      "question": "Is on, Pural Noun in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "board is Singular or mass Noun",
+      "question": "Is board, Comparative Adjective in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Ram is Pural singular Noun",
+      "question": "Is Ram, Cardinal number in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Dr. is Pural singular Noun",
+      "question": "Is Dr., Predeterminer in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "plane is Singular or mass Noun",
+      "question": "Is plane, Possessive WH-pronoun in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "passenger is Singular or mass Noun",
+      "question": "Is passenger, Singular or mass Noun in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "crashed is Verb (past participle)",
+      "question": "Is crashed, Verb (past participle) in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "has is Verb (3rd person singular present tense)",
+      "question": "Is has, Wh-adverb in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "after is Preposition or subordinating conjunction",
+      "question": "Is after, Preposition or subordinating conjunction in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "shortly is Adverb",
+      "question": "Is shortly, Adverb in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "from is Preposition or subordinating conjunction",
+      "question": "Is from, Preposition or subordinating conjunction in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "take-off is Singular or mass Noun",
+      "question": "Is take-off, Interjection in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "'s is Possessive ending",
+      "question": "Is 's, Possessive ending in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Kyrgyzstan is Pural singular Noun",
+      "question": "Is Kyrgyzstan, Coordinating conjunction in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "capital is Singular or mass Noun",
+      "question": "Is capital, Determiner in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Bishkek is Pural singular Noun",
+      "question": "Is Bishkek, Pural singular Noun in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "a is Determiner",
+      "question": "Is a, Existential there in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "killing is Verb (present participle)",
+      "question": "Is killing, Adverb in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "number is Singular or mass Noun",
+      "question": "Is number, Singular or mass Noun in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "large is Adjective",
+      "question": "Is large, Interjection in the following sentence?",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "of is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number _____________ those on board .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["out", "from", "that", "of"]
+    },
+    {
+      "explanation": "those is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of _____________ on board .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["those", "some", "a", "The"]
+    },
+    {
+      "explanation": "on is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those _____________ board .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["out", "about", "on", "that"]
+    },
+    {
+      "explanation": "board is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on _____________ .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["board", "passenger", "take-off", "round"]
+    },
+    {
+      "explanation": "Ram is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. _____________ passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["Dr.", "Air", "Ram", "Itek"]
+    },
+    {
+      "explanation": "Dr. is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        " _____________ Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["Boeing", "Dr.", "Bishkek", "Itek"]
+    },
+    {
+      "explanation": "plane is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger _____________ has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["take-off", "plane", "board", "round"]
+    },
+    {
+      "explanation": "passenger is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram _____________ plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["passenger", "capital", "round", "aviation"]
+    },
+    {
+      "explanation": "after is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly _____________ take-off from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["for", "out", "from", "after"]
+    },
+    {
+      "explanation": "from is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off _____________ Kyrgyzstan 's capital , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["from", "in", "that", "of"]
+    },
+    {
+      "explanation": "take-off is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after _____________ from Kyrgyzstan 's capital , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["passenger", "authority", "take-off", "capital"]
+    },
+    {
+      "explanation": "Kyrgyzstan is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from _____________ 's capital , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["Iran", "Itek", "Ram", "Kyrgyzstan"]
+    },
+    {
+      "explanation": "capital is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's _____________ , Bishkek , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["capital", "aviation", "authority", "number"]
+    },
+    {
+      "explanation": "Bishkek is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , _____________ , killing a large number of those on board .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["Bishkek", "Dr.", "Itek", "Ram"]
+    },
+    {
+      "explanation": "a is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing _____________ large number of those on board .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["a", "The", "some", "those"]
+    },
+    {
+      "explanation": "number is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Dr. Ram passenger plane has crashed shortly after take-off from Kyrgyzstan 's capital , Bishkek , killing a large _____________ of those on board .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["plane", "passenger", "board", "number"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural Noun.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["minutes", "737", "north-eastern", "bound"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Adverb.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["later", "took", "10", "for"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["Itek", "some", "bound", "turned"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Determiner.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["10", "but", "off", "The"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["later", "Boeing", "off", "took"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["bound", "Air", "10", "737"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Verb (past tense).",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["but", "took", "The", "Mashhad"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Cardinal number.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["for", "The", "737", "Iran"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Verb (past participle).",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["737", "bound", "in", "took"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Particle.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["off", "Air", "minutes", "737"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["bound", "round", "off", "Mashhad"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["for", "off", "The", "Air"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Preposition or subordinating conjunction.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["some", "Boeing", "later", "in"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Pural singular Noun.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["north-eastern", "Iran", "took", "round"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Adjective.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["10", "north-eastern", "bound", "The"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Coordinating conjunction.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["Boeing", "but", "Mashhad", "some"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["bound", "The", "took", "round"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Verb (past tense).",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["some", "bound", "but", "turned"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Cardinal number.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["10", "later", "Air", "for"]
+    },
+    {
+      "explanation": "",
+      "question": "In the following sentence identify Determiner.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["for", "turned", "some", "10"]
+    },
+    {
+      "explanation": "minutes is Pural Noun",
+      "question": "Is minutes, Pural Noun in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "later is Adverb",
+      "question": "Is later, Adverb in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Itek is Pural singular Noun",
+      "question": "Is Itek, Pural singular Noun in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "The is Determiner",
+      "question": "Is The, Verb (past participle) in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Boeing is Pural singular Noun",
+      "question": "Is Boeing, Verb (present participle) in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Air is Pural singular Noun",
+      "question": "Is Air, Verb (non 3rd person singular present tense) in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "took is Verb (past tense)",
+      "question": "Is took, Verb (past tense) in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "737 is Cardinal number",
+      "question": "Is 737, Wh-adverb in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "bound is Verb (past participle)",
+      "question": "Is bound, Adverb in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "off is Particle",
+      "question": "Is off, Verb (present participle) in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Mashhad is Pural singular Noun",
+      "question": "Is Mashhad, WH-determiner in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "for is Preposition or subordinating conjunction",
+      "question": "Is for, Preposition or subordinating conjunction in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "in is Preposition or subordinating conjunction",
+      "question": "Is in, Preposition or subordinating conjunction in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Iran is Pural singular Noun",
+      "question": "Is Iran, Adverb in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "north-eastern is Adjective",
+      "question": "Is north-eastern, Adjective in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "but is Coordinating conjunction",
+      "question": "Is but, Coordinating conjunction in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "round is Singular or mass Noun",
+      "question": "Is round, Coordinating conjunction in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "turned is Verb (past tense)",
+      "question": "Is turned, Particle in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "10 is Cardinal number",
+      "question": "Is 10, Cardinal number in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "some is Determiner",
+      "question": "Is some, Determiner in the following sentence?",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Itek is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The _____________ Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["Boeing", "Itek", "Dr.", "Mashhad"]
+    },
+    {
+      "explanation": "The is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension":
+        " _____________ Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["those", "The", "some", "a"]
+    },
+    {
+      "explanation": "Boeing is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air _____________ 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["Dr.", "Bishkek", "Kyrgyzstan", "Boeing"]
+    },
+    {
+      "explanation": "Air is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek _____________ Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["Bishkek", "Mashhad", "Air", "Itek"]
+    },
+    {
+      "explanation": "737 is Cardinal number",
+      "question":
+        "Select appropiate Cardinal number from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air Boeing _____________ took off bound for Mashhad , in north-eastern Iran , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["90", "10", "20", "737"]
+    },
+    {
+      "explanation": "Mashhad is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for _____________ , in north-eastern Iran , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["Iran", "Bishkek", "Mashhad", "Kyrgyzstan"]
+    },
+    {
+      "explanation": "for is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound _____________ Mashhad , in north-eastern Iran , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["about", "for", "after", "of"]
+    },
+    {
+      "explanation": "in is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , _____________ north-eastern Iran , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["after", "out", "in", "from"]
+    },
+    {
+      "explanation": "Iran is Pural singular Noun",
+      "question":
+        "Select appropiate Pural singular Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern _____________ , but turned round some 10 minutes later .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["Dr.", "Iran", "Mashhad", "Air"]
+    },
+    {
+      "explanation": "round is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned _____________ some 10 minutes later .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["round", "crew", "board", "number"]
+    },
+    {
+      "explanation": "10 is Cardinal number",
+      "question":
+        "Select appropiate Cardinal number from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round some _____________ minutes later .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["10", "90", "20", "737"]
+    },
+    {
+      "explanation": "some is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension":
+        "The Itek Air Boeing 737 took off bound for Mashhad , in north-eastern Iran , but turned round _____________ 10 minutes later .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["a", "those", "some", "The"]
+    }
+  ],
+  "success": 1
+}

@@ -6,6 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 import subprocess
+import json
 
 from .forms import UploadFileForm
 from .models import WordWithTag
@@ -21,6 +22,7 @@ INVALID_REQUEST_CODE = -99
 
 INPUT_FILE_PATH = './bridge/uploads/'
 OUTPUT_FILE_PATH = './bridge/output/backend-pos/'
+RESPONSE_FILE_PATH = './bridge/response/'
 
 JAVA_PATH = 'java'
 ENCODING = '-Dfile.encoding=UTF-8'
@@ -52,6 +54,7 @@ def index(request):
             'message': '',
             'questions': response
         }
+    save_file(RESPONSE_FILE_PATH + 'sample-input' + '.json', data)
     return JsonResponse(data, safe=True)
 
 @csrf_exempt
@@ -75,6 +78,7 @@ def upload_file(request):
             'success': INVALID_REQUEST_CODE,
             'message': 'Invalid request type of params',
         }
+    save_file(RESPONSE_FILE_PATH + input_file_name + '.json', data)
     return JsonResponse(data, safe=True)
 
 def get_file_name_and_extension(file_name):
@@ -88,3 +92,7 @@ def handle_uploaded_file(f, file_name):
     with open(INPUT_FILE_PATH + file_name, 'wb+') as new_file:
         for chunk in f.chunks():
             new_file.write(chunk)
+
+def save_file(path, data):
+    with open(path, 'w') as outfile:
+        json.dump(data, outfile)
