@@ -3,11 +3,7 @@ from random import randint
 
 from bridge.template.multiple_choice_question import generate_multiple_choice_question
 from .pos_abbrevations import POS_ABBREVATIONS
-
-KEY_POS = 'pos'
-KEY_SENTENCE = 'sentence'
-KEY_TAG = 'tag'
-KEY_WORD = 'word'
+from .keys import KEY_POS, KEY_SENTENCE, KEY_TAG, KEY_WORD
 
 def get_any_words_except_tag_from_sentence(parsed_data, tag, count):
     possible_words = []
