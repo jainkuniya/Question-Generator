@@ -20,6 +20,7 @@ import butterknife.OnClick;
 public class QuestionsActivity extends AppCompatActivity {
 
   int NUM_PAGES = 5;
+  int flag=0;
 
 
     @BindView(R.id.view_pager)
@@ -39,10 +40,20 @@ public class QuestionsActivity extends AppCompatActivity {
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
     }
+    public void changeButton(){
+        btnNext.setText("Next");
+        flag=1;
+    }
 
     @OnClick(R.id.btn_next)
     public void next(View view) {
-        mPager.setCurrentItem(mPager.getCurrentItem() + 1, true);
+        if(flag==0)
+        changeButton();
+        else
+            submit();
+
+
+
     }
     @Override
     public void onBackPressed() {
@@ -62,14 +73,31 @@ public class QuestionsActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+            switch(position){
+                case 1:
+                    return new MCQFragment();
+                case 2:
+                    return new MCQFragment();
+                case 3:
+                    return new MCQFragment();
+                case 4:
+                    return new MCQFragment();
+                case 5:
+                    return new MCQFragment();
+                default:
+                    return new MCQFragment();
 
-            return new MCQFragment();
+            }
+
         }
 
         @Override
         public int getCount() {
             return NUM_PAGES;
         }
+    }
+    public void submit(){
+        mPager.setCurrentItem(mPager.getCurrentItem() + 1, true);
     }
 }
 
