@@ -5,23 +5,30 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.user.qapp.R;
 import com.example.user.qapp.fragments.MCQFragment;
+import com.example.user.qapp.utils.NonSwipeableViewPager;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class QuestionsActivity extends AppCompatActivity {
 
-    private static final int NUM_PAGES = 5;
-
-    @BindView(R.id.view_pager) private ViewPager mPager;
+  int NUM_PAGES = 5;
 
 
-    private PagerAdapter mPagerAdapter;
+    @BindView(R.id.view_pager)
+    NonSwipeableViewPager mPager;
+    @BindView(R.id.btn_next)
+    Button btnNext;
+
+
+     PagerAdapter mPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +40,10 @@ public class QuestionsActivity extends AppCompatActivity {
         mPager.setAdapter(mPagerAdapter);
     }
 
+    @OnClick(R.id.btn_next)
+    public void next(View view) {
+        mPager.setCurrentItem(mPager.getCurrentItem() + 1, true);
+    }
     @Override
     public void onBackPressed() {
         if (mPager.getCurrentItem() == 0) {
