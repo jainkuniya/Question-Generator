@@ -78,11 +78,12 @@ public class UploadFile {
             }
             public void onFailure(Call<UploadFileResponse> call, Throwable t) {
                 Log.d("onFailure upload", t.toString());
-                Intent intent=new Intent(context,QuestionsActivity.class);
+                progressDialog.dismiss();
+                /*Intent intent=new Intent(context,QuestionsActivity.class);
                 intent.putExtra("questions",(ArrayList<Question>) questions);
                 context.startActivity(intent);
-                progressDialog.dismiss();
-                Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();*/
             }
 
         });

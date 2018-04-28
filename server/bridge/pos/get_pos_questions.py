@@ -10,7 +10,7 @@ from .keys import KEY_POS, KEY_SENTENCE, KEY_TAG, KEY_WORD
 
 def get_any_words_except_tag_from_sentence(parsed_data, tag, count):
     possible_words = []
-    for key, value in parsed_data.iteritems():
+    for key, value in parsed_data.items():
         if (value[KEY_TAG] != tag) and POS_ABBREVATIONS.get(value[KEY_TAG]) is not None:
             possible_words.append(value[KEY_WORD])
     random.shuffle(possible_words)
@@ -21,7 +21,7 @@ def get_any_words_except_tag_from_sentence(parsed_data, tag, count):
 
 def get_pos_identify_questions(parsed_data, sentence):
     questions = []
-    for key, value in parsed_data.iteritems():
+    for key, value in parsed_data.items():
         # get POS from map
         tag = POS_ABBREVATIONS.get(value[KEY_TAG])
         if tag is None:
@@ -47,7 +47,7 @@ def get_pos_identify_true_false_question_sentence(word, tag):
 
 def get_pos_identify_true_false_questions(parsed_data, sentence):
     questions = []
-    for key, value in parsed_data.iteritems():
+    for key, value in parsed_data.items():
         # get POS from map
         tag = POS_ABBREVATIONS.get(value[KEY_TAG])
         if tag is None:
@@ -73,7 +73,7 @@ def get_pos_identify_true_false_questions(parsed_data, sentence):
 
 def get_pos_fill_in_the_blanks_questions(parsed_data, sentence):
     questions = []
-    for key, value in parsed_data.iteritems():
+    for key, value in parsed_data.items():
         # get POS from map
         tag = POS_ABBREVATIONS.get(value[KEY_TAG])
         if tag is None:

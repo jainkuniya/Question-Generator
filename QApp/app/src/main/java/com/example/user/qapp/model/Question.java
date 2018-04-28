@@ -4,24 +4,43 @@ package com.example.user.qapp.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class Question {
 
-    @SerializedName("answer")
+    @SerializedName("options")
     @Expose
-    private Integer answer;
+    private List<String> options = null;
+    @SerializedName("comprehension")
+    @Expose
+    private String comprehension;
     @SerializedName("question")
     @Expose
     private String question;
+    @SerializedName("answer")
+    @Expose
+    private Integer answer;
     @SerializedName("question_type")
     @Expose
     private Integer questionType;
+    @SerializedName("explanation")
+    @Expose
+    private String explanation;
 
-    public Integer getAnswer() {
-        return answer;
+    public List<String> getOptions() {
+        return options;
     }
 
-    public void setAnswer(Integer answer) {
-        this.answer = answer;
+    public void setOptions(List<String> options) {
+        this.options = options;
+    }
+
+    public String getComprehension() {
+        return comprehension;
+    }
+
+    public void setComprehension(String comprehension) {
+        this.comprehension = comprehension;
     }
 
     public String getQuestion() {
@@ -32,6 +51,14 @@ public class Question {
         this.question = question;
     }
 
+    public Integer getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(Integer answer) {
+        this.answer = answer;
+    }
+
     public Integer getQuestionType() {
         return questionType;
     }
@@ -40,4 +67,11 @@ public class Question {
         this.questionType = questionType;
     }
 
+    public String getExplanation() {
+        return explanation;
+    }
+
+    public void setExplanation(String explanation) {
+        this.explanation = explanation;
+    }
 }

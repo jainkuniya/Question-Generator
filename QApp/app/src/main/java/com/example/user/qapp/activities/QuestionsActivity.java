@@ -12,7 +12,6 @@ import android.widget.Button;
 
 import com.example.user.qapp.R;
 import com.example.user.qapp.fragments.MCQFragment;
-import com.example.user.qapp.fragments.TrueFalseFragment;
 import com.example.user.qapp.model.Question;
 import com.example.user.qapp.utils.NonSwipeableViewPager;
 
@@ -44,6 +43,7 @@ public class QuestionsActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         Intent intent = getIntent();
         questions=(ArrayList<Question>)intent.getSerializableExtra("questions");
+        //NUM_PAGES=questions.size();
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
     }
@@ -86,12 +86,12 @@ public class QuestionsActivity extends AppCompatActivity {
             Bundle bundle=new Bundle();
             bundle.putSerializable("question",questions);
             Fragment frag;
-            switch(position){
-                case 0:
+        //    switch(position){
+        //        case 0:
                     frag=new MCQFragment();
                     frag.setArguments(bundle);
                     return frag;
-                case 1:
+          /*      case 1:
 
                     frag=new TrueFalseFragment();
                     frag.setArguments(bundle);
@@ -117,7 +117,7 @@ public class QuestionsActivity extends AppCompatActivity {
                     frag.setArguments(bundle);
                     return frag;
 
-            }
+            }*/
 
         }
 

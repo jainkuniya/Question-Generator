@@ -32,7 +32,7 @@ POS_CLASS = 'POSWrapper'
 
 def save_in_db(parsed_data):
     for obj in parsed_data[KEY_POS]:
-        for key, value in parsed_data[KEY_POS][obj][KEY_POS].iteritems():
+        for key, value in parsed_data[KEY_POS][obj][KEY_POS].items():
             if (POS_ABBREVATIONS.get(value[KEY_TAG]) is  None):
                 continue
             try:

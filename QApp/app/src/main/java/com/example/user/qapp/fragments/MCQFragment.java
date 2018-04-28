@@ -11,6 +11,9 @@ import android.widget.TextView;
 
 import com.example.user.qapp.R;
 import com.example.user.qapp.activities.QuestionsActivity;
+import com.example.user.qapp.model.Question;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,6 +28,7 @@ public class MCQFragment extends Fragment {
     @BindView(R.id.tv_explain)
     TextView explain;
 
+    ArrayList<Question> questions;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +43,9 @@ public class MCQFragment extends Fragment {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
                 R.layout.fragment_mcq, container, false);
         ButterKnife.bind(this, rootView);
+        Bundle b=getArguments();
+        questions=(ArrayList<Question>)b.getSerializable("question");
+
         correct.setVisibility(View.INVISIBLE);
         explain.setVisibility(View.INVISIBLE);
 
