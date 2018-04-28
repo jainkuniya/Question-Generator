@@ -1,5 +1,6 @@
 package com.example.user.qapp.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,7 +12,11 @@ import android.widget.Button;
 
 import com.example.user.qapp.R;
 import com.example.user.qapp.fragments.MCQFragment;
+import com.example.user.qapp.fragments.TrueFalseFragment;
+import com.example.user.qapp.model.Question;
 import com.example.user.qapp.utils.NonSwipeableViewPager;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,6 +26,7 @@ public class QuestionsActivity extends AppCompatActivity {
 
   int NUM_PAGES = 5;
   int flag=0;
+  ArrayList<Question> questions;
 
 
     @BindView(R.id.view_pager)
@@ -36,7 +42,8 @@ public class QuestionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
         ButterKnife.bind(this);
-
+        Intent intent = getIntent();
+        questions=(ArrayList<Question>)intent.getSerializableExtra("questions");
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
     }
@@ -49,8 +56,11 @@ public class QuestionsActivity extends AppCompatActivity {
     public void next(View view) {
         if(flag==0)
         changeButton();
-        else
+        else{
             submit();
+            btnNext.setText("Submit");
+            flag=0;
+            }
 
 
 
@@ -73,19 +83,39 @@ public class QuestionsActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+            Bundle bundle=new Bundle();
+            bundle.putSerializable("question",questions);
+            Fragment frag;
             switch(position){
+                case 0:
+                    frag=new MCQFragment();
+                    frag.setArguments(bundle);
+                    return frag;
                 case 1:
-                    return new MCQFragment();
+
+                    frag=new TrueFalseFragment();
+                    frag.setArguments(bundle);
+                    return frag;
                 case 2:
-                    return new MCQFragment();
+
+                    frag=new MCQFragment();
+                    frag.setArguments(bundle);
+                    return frag;
                 case 3:
-                    return new MCQFragment();
+
+                    frag=new MCQFragment();
+                    frag.setArguments(bundle);
+                    return frag;
                 case 4:
-                    return new MCQFragment();
-                case 5:
-                    return new MCQFragment();
+
+                    frag=new MCQFragment();
+                    frag.setArguments(bundle);
+                    return frag;
                 default:
-                    return new MCQFragment();
+
+                    frag=new MCQFragment();
+                    frag.setArguments(bundle);
+                    return frag;
 
             }
 

@@ -1,7 +1,6 @@
 package com.example.user.qapp.activities;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -55,8 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     //upload file
                     UploadFile up = new UploadFile();
                     up.uploadFile(this,file, fileName);
-                    Intent intent=new Intent(this,QuestionsActivity.class);
-                    startActivity(intent);
+
 
                 } catch (IOException e) {
                     e.printStackTrace();

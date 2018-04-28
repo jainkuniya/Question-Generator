@@ -2,12 +2,17 @@ package com.example.user.qapp.network;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.user.qapp.activities.QuestionsActivity;
+import com.example.user.qapp.model.Question;
 import com.example.user.qapp.model.UploadFileResponse;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
@@ -23,6 +28,7 @@ import retrofit2.Retrofit;
 
 public class UploadFile {
     ProgressDialog progressDialog;
+    List<Question> questions;
     public void uploadFile(final Context context, File file, String title) {
         progressDialog = new ProgressDialog(context);
         progressDialog.setMessage("Loading...");
@@ -54,21 +60,27 @@ public class UploadFile {
 
                 UploadFileResponse uploadFileResponse = response.body();
                 int status = uploadFileResponse.getSuccess();
+                questions = uploadFileResponse.getQuestions();
 
                 if (response.code() == 200) {
                     if (status == 1) {
-                        //send to next activity
-                        //send questions via intent or singleton
+
                     }
                     Toast.makeText(context, uploadFileResponse.getMessage(), Toast.LENGTH_SHORT).show();
 
                 } else {
                     Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
                 }
+                Intent intent=new Intent(context,QuestionsActivity.class);
+                intent.putExtra("questions",(ArrayList<Question>) questions);
+                context.startActivity(intent);
                 progressDialog.dismiss();
             }
             public void onFailure(Call<UploadFileResponse> call, Throwable t) {
                 Log.d("onFailure upload", t.toString());
+                Intent intent=new Intent(context,QuestionsActivity.class);
+                intent.putExtra("questions",(ArrayList<Question>) questions);
+                context.startActivity(intent);
                 progressDialog.dismiss();
                 Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
             }
