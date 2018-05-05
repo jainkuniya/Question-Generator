@@ -11,11 +11,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.user.qapp.R;
+import com.example.user.qapp.Singleton;
 import com.example.user.qapp.fragments.MCQFragment;
 import com.example.user.qapp.model.Question;
 import com.example.user.qapp.utils.NonSwipeableViewPager;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -23,48 +24,46 @@ import butterknife.OnClick;
 
 public class QuestionsActivity extends AppCompatActivity {
 
-  int NUM_PAGES = 5;
-  int flag=0;
-  ArrayList<Question> questions;
+    int flag = 0;
+    List<Question> questions;
 
 
     @BindView(R.id.view_pager)
     NonSwipeableViewPager mPager;
+
     @BindView(R.id.btn_next)
     Button btnNext;
 
+    @OnClick(R.id.btn_next)
+    public void next(View view) {
+        if (flag == 0)
+            changeButton();
+        else {
+            submit();
+            btnNext.setText(R.string.submit);
+            flag = 0;
+        }
+    }
 
-     PagerAdapter mPagerAdapter;
+
+    PagerAdapter mPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
         ButterKnife.bind(this);
-        Intent intent = getIntent();
-        questions=(ArrayList<Question>)intent.getSerializableExtra("questions");
-        //NUM_PAGES=questions.size();
+
+        questions = Singleton.getInstance().getQuestionList();
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
     }
-    public void changeButton(){
-        btnNext.setText("Next");
-        flag=1;
+
+    public void changeButton() {
+        btnNext.setText(R.string.next);
+        flag = 1;
     }
 
-    @OnClick(R.id.btn_next)
-    public void next(View view) {
-        if(flag==0)
-        changeButton();
-        else{
-            submit();
-            btnNext.setText("Submit");
-            flag=0;
-            }
-
-
-
-    }
     @Override
     public void onBackPressed() {
         if (mPager.getCurrentItem() == 0) {
@@ -77,20 +76,18 @@ public class QuestionsActivity extends AppCompatActivity {
     }
 
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
-        public ScreenSlidePagerAdapter(FragmentManager fm) {
+        ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
         @Override
         public Fragment getItem(int position) {
-            Bundle bundle=new Bundle();
-            bundle.putSerializable("question",questions);
             Fragment frag;
-        //    switch(position){
-        //        case 0:
-                    frag=new MCQFragment();
-                    frag.setArguments(bundle);
-                    return frag;
+            //    switch(position){
+            //        case 0:
+            frag = new MCQFragment();
+
+            return frag;
           /*      case 1:
 
                     frag=new TrueFalseFragment();
@@ -123,10 +120,11 @@ public class QuestionsActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return NUM_PAGES;
+            return questions.size();
         }
     }
-    public void submit(){
+
+    public void submit() {
         mPager.setCurrentItem(mPager.getCurrentItem() + 1, true);
     }
 }

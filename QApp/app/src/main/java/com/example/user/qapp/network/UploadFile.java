@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.user.qapp.Singleton;
 import com.example.user.qapp.activities.QuestionsActivity;
 import com.example.user.qapp.model.Question;
 import com.example.user.qapp.model.UploadFileResponse;
@@ -71,19 +72,19 @@ public class UploadFile {
                 } else {
                     Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
                 }
+                Singleton.getInstance().setQuestionList(questions);
                 Intent intent=new Intent(context,QuestionsActivity.class);
-                intent.putExtra("questions",(ArrayList<Question>) questions);
                 context.startActivity(intent);
                 progressDialog.dismiss();
             }
             public void onFailure(Call<UploadFileResponse> call, Throwable t) {
                 Log.d("onFailure upload", t.toString());
                 progressDialog.dismiss();
-                /*Intent intent=new Intent(context,QuestionsActivity.class);
+                Intent intent=new Intent(context,QuestionsActivity.class);
                 intent.putExtra("questions",(ArrayList<Question>) questions);
                 context.startActivity(intent);
 
-                Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();*/
+                Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
             }
 
         });
