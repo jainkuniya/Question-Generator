@@ -109,20 +109,22 @@ def get_pos_questions_from_sentence(parsed_data, sentence):
     questions = []
     # get identify POS questions
     # TODO better limting algo
-    questions.extend(get_pos_identify_questions(parsed_data, sentence))
-    random.shuffle(questions)
-    print (len(questions))
-    questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
-    # get identify POS True, False questions
-    # TODO better limting algo
-    questions.extend(get_pos_identify_true_false_questions(parsed_data, sentence))
-    random.shuffle(questions)
-    questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
-    # get pos fill in the blanks questions
-    # TODO better limting algo
-    questions.extend(get_pos_fill_in_the_blanks_questions(parsed_data, sentence))
-    random.shuffle(questions)
-    questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
+    try:
+        questions.extend(get_pos_identify_questions(parsed_data, sentence))
+        random.shuffle(questions)
+        questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
+        # get identify POS True, False questions
+        # TODO better limting algo
+        questions.extend(get_pos_identify_true_false_questions(parsed_data, sentence))
+        random.shuffle(questions)
+        questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
+        # get pos fill in the blanks questions
+        # TODO better limting algo
+        questions.extend(get_pos_fill_in_the_blanks_questions(parsed_data, sentence))
+        random.shuffle(questions)
+        questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
+    except:
+        print ("Error in limiting")
     return questions
 
 def get_pos_questions(parsed_data):
