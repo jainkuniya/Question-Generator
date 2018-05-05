@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Singleton {
     private static Singleton singleton;
-    private List<Question> questionList ;
+    private List<Question> questionList;
 
     private Singleton() {
     }

@@ -11,6 +11,6 @@
     <string name="wrong">Wrong Answer</string>
     <string name="next">Next</string>
     <string name="submit">Submit</string>
-
+    <string name="not_applicable">Not applicable</string>
 
 </resources>

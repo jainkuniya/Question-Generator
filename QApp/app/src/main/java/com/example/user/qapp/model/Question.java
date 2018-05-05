@@ -22,7 +22,7 @@ public class Question {
     private Integer answer;
     @SerializedName("question_type")
     @Expose
-    private Integer questionType;
+    private String questionType;
     @SerializedName("explanation")
     @Expose
     private String explanation;
@@ -59,11 +59,11 @@ public class Question {
         this.answer = answer;
     }
 
-    public Integer getQuestionType() {
+    public String getQuestionType() {
         return questionType;
     }
 
-    public void setQuestionType(Integer questionType) {
+    public void setQuestionType(String questionType) {
         this.questionType = questionType;
     }
 

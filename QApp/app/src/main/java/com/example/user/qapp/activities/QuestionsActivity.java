@@ -1,6 +1,5 @@
 package com.example.user.qapp.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,6 +12,7 @@ import android.widget.Button;
 import com.example.user.qapp.R;
 import com.example.user.qapp.Singleton;
 import com.example.user.qapp.fragments.MCQFragment;
+import com.example.user.qapp.fragments.SenCountQueFragment;
 import com.example.user.qapp.model.Question;
 import com.example.user.qapp.utils.NonSwipeableViewPager;
 
@@ -24,25 +24,17 @@ import butterknife.OnClick;
 
 public class QuestionsActivity extends AppCompatActivity {
 
-    int flag = 0;
     List<Question> questions;
-
 
     @BindView(R.id.view_pager)
     NonSwipeableViewPager mPager;
 
-    @BindView(R.id.btn_next)
-    Button btnNext;
+    @BindView(R.id.btCheck)
+    Button btCheck;
 
-    @OnClick(R.id.btn_next)
+    @OnClick(R.id.btCheck)
     public void next(View view) {
-        if (flag == 0)
-            changeButton();
-        else {
-            submit();
-            btnNext.setText(R.string.submit);
-            flag = 0;
-        }
+        btCheck.setText(R.string.submit);
     }
 
 
@@ -60,17 +52,14 @@ public class QuestionsActivity extends AppCompatActivity {
     }
 
     public void changeButton() {
-        btnNext.setText(R.string.next);
-        flag = 1;
+        btCheck.setText(R.string.next);
     }
 
     @Override
     public void onBackPressed() {
         if (mPager.getCurrentItem() == 0) {
-
             super.onBackPressed();
         } else {
-
             mPager.setCurrentItem(mPager.getCurrentItem() - 1);
         }
     }
@@ -82,39 +71,17 @@ public class QuestionsActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+            Bundle bundle = new Bundle();
+            bundle.putInt("position", position);
+            Question question = questions.get(position);
             Fragment frag;
-            //    switch(position){
-            //        case 0:
-            frag = new MCQFragment();
-
+            if (question.getQuestionType().equals("1")) {
+                frag = new SenCountQueFragment();
+            } else {
+                frag = new MCQFragment();
+            }
+            frag.setArguments(bundle);
             return frag;
-          /*      case 1:
-
-                    frag=new TrueFalseFragment();
-                    frag.setArguments(bundle);
-                    return frag;
-                case 2:
-
-                    frag=new MCQFragment();
-                    frag.setArguments(bundle);
-                    return frag;
-                case 3:
-
-                    frag=new MCQFragment();
-                    frag.setArguments(bundle);
-                    return frag;
-                case 4:
-
-                    frag=new MCQFragment();
-                    frag.setArguments(bundle);
-                    return frag;
-                default:
-
-                    frag=new MCQFragment();
-                    frag.setArguments(bundle);
-                    return frag;
-
-            }*/
 
         }
 
