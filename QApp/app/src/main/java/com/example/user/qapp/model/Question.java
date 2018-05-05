@@ -19,7 +19,7 @@ public class Question {
     private String question;
     @SerializedName("answer")
     @Expose
-    private Integer answer;
+    private String answer;
     @SerializedName("question_type")
     @Expose
     private String questionType;
@@ -51,11 +51,11 @@ public class Question {
         this.question = question;
     }
 
-    public Integer getAnswer() {
+    public String getAnswer() {
         return answer;
     }
 
-    public void setAnswer(Integer answer) {
+    public void setAnswer(String answer) {
         this.answer = answer;
     }
 

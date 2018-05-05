@@ -38,11 +38,6 @@ public class TrueFalseFragment extends Fragment {
         correct.setVisibility(View.INVISIBLE);
         explain.setVisibility(View.INVISIBLE);
 
-
-        if (radioGroup.getCheckedRadioButtonId() != -1) {
-            ((QuestionsActivity) getActivity()).changeButton();
-        }
-
         return rootView;
     }
 }

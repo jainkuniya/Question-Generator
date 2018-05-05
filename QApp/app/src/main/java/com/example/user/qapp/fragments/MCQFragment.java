@@ -23,10 +23,6 @@ public class MCQFragment extends Fragment {
 
     @BindView(R.id.rg)
     RadioGroup radioGroup;
-    @BindView(R.id.tv_correct)
-    TextView correct;
-    @BindView(R.id.tv_explain)
-    TextView explain;
 
     ArrayList<Question> questions;
     @Override
@@ -43,16 +39,6 @@ public class MCQFragment extends Fragment {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
                 R.layout.fragment_mcq, container, false);
         ButterKnife.bind(this, rootView);
-        Bundle b=getArguments();
-        questions=(ArrayList<Question>)b.getSerializable("question");
-
-        correct.setVisibility(View.INVISIBLE);
-        explain.setVisibility(View.INVISIBLE);
-
-
-        if(radioGroup.getCheckedRadioButtonId() != -1){
-            ((QuestionsActivity) getActivity()).changeButton();
-        }
 
         return rootView;
 

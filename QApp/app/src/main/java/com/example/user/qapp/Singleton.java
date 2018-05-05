@@ -1,7 +1,10 @@
 package com.example.user.qapp;
 
+import android.util.SparseArray;
+
 import com.example.user.qapp.model.Question;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -10,9 +13,11 @@ import java.util.List;
 
 public class Singleton {
     private static Singleton singleton;
-    private List<Question> questionList;
+    private static List<Question> questionList;
+    private SparseArray<String> answers;
 
     private Singleton() {
+        answers = new SparseArray<>();
     }
 
     public static Singleton getInstance() {
@@ -27,6 +32,14 @@ public class Singleton {
     }
 
     public void setQuestionList(List<Question> questionList) {
-        this.questionList = questionList;
+        Singleton.questionList = questionList;
+    }
+
+    public void updateAnswer(int position, String answer) {
+        answers.put(position, answer);
+    }
+
+    public String getAnswer(int position) {
+        return answers.get(position);
     }
 }

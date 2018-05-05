@@ -1,5 +1,6 @@
 package com.example.user.qapp.activities;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,6 +9,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.user.qapp.R;
 import com.example.user.qapp.Singleton;
@@ -34,8 +36,14 @@ public class QuestionsActivity extends AppCompatActivity {
 
     @OnClick(R.id.btCheck)
     public void next(View view) {
-        btCheck.setText(R.string.submit);
+        onBtClick();
     }
+
+    @BindView(R.id.tvResult)
+    TextView tvResult;
+
+    @BindView(R.id.tvExplain)
+    TextView tvExplain;
 
 
     PagerAdapter mPagerAdapter;
@@ -51,8 +59,42 @@ public class QuestionsActivity extends AppCompatActivity {
         mPager.setAdapter(mPagerAdapter);
     }
 
-    public void changeButton() {
+
+    public void onBtClick() {
+        if (btCheck.getText().toString().equalsIgnoreCase(getResources().getString(R.string.next))) {
+            submit();
+            return;
+        }
+
+        Question question = Singleton.getInstance().getQuestionList().get(mPager.getCurrentItem());
+        String answer = Singleton.getInstance().getAnswer(mPager.getCurrentItem());
+        if (question.getQuestionType().equals("1")) {
+            if (answer.equals(question.getAnswer())) {
+                correctAnswer(question);
+            } else {
+                wrongAnswer(question);
+            }
+        }
+
         btCheck.setText(R.string.next);
+    }
+
+    private void correctAnswer(Question question) {
+        tvResult.setVisibility(View.VISIBLE);
+        tvResult.setText(R.string.correct_answer);
+        tvResult.setTextColor(Color.GREEN);
+
+        tvExplain.setVisibility(View.VISIBLE);
+        tvExplain.setText(question.getExplanation());
+    }
+
+    private void wrongAnswer(Question question) {
+        tvResult.setVisibility(View.VISIBLE);
+        tvResult.setText(R.string.wrong_answer);
+        tvResult.setTextColor(Color.RED);
+
+        tvExplain.setVisibility(View.VISIBLE);
+        tvExplain.setText(question.getExplanation());
     }
 
     @Override
@@ -71,6 +113,7 @@ public class QuestionsActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+            initView();
             Bundle bundle = new Bundle();
             bundle.putInt("position", position);
             Question question = questions.get(position);
@@ -89,6 +132,13 @@ public class QuestionsActivity extends AppCompatActivity {
         public int getCount() {
             return questions.size();
         }
+    }
+
+    private void initView() {
+        tvExplain.setVisibility(View.GONE);
+        tvResult.setVisibility(View.GONE);
+
+        btCheck.setText(R.string.check);
     }
 
     public void submit() {

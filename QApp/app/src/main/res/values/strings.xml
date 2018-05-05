@@ -12,5 +12,8 @@
     <string name="next">Next</string>
     <string name="submit">Submit</string>
     <string name="not_applicable">Not applicable</string>
+    <string name="wrong_answer">Wrong answer!</string>
+    <string name="correct_answer">Correct answer!</string>
+    <string name="check">Check</string>
 
 </resources>
