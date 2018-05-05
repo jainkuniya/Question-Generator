@@ -108,10 +108,13 @@ def get_pos_questions_from_sentence(parsed_data, sentence):
     questions = []
     # get identify POS questions
     questions.extend(get_pos_identify_questions(parsed_data, sentence))
+    random.shuffle(questions)
     # get identify POS True, False questions
     questions.extend(get_pos_identify_true_false_questions(parsed_data, sentence))
+    random.shuffle(questions)
     # get pos fill in the blanks questions
     questions.extend(get_pos_fill_in_the_blanks_questions(parsed_data, sentence))
+    random.shuffle(questions)
     return questions
 
 def get_pos_questions(parsed_data):
