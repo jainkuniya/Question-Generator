@@ -37,7 +37,7 @@ def save_in_db(parsed_data):
                 continue
             try:
                 wordWithTag = WordWithTag(tag=value[KEY_TAG],
-                                    word=value[KEY_WORD],
+                                    word=str(value[KEY_WORD]).lower,
                                     )
                 wordWithTag.save()
             except:

@@ -1,1 +1,370 @@
-{"message": "Successfully uploaded", "questions": [{"explanation": "and is Coordinating conjunction", "question": "Is and, Coordinating conjunction in the following sentence?", "comprehension": "He added this paste and some salt to the cooking vegetables . ", "question_type": 2, "answer": 0, "options": ["True", "False"]}, {"explanation": "cleaned is Verb (past tense)", "question": "Select appropiate Verb (past tense) from the following to fill the black in the sentence.", "comprehension": "He took all the vegetable bits , washed them and _____________ them well .", "question_type": 2, "answer": 1, "options": ["turned", "cleaned", "was", "placed"]}, {"explanation": "a is Determiner", "question": "Is a, Determiner in the following sentence?", "comprehension": "He put them in a huge pot and placed it on the fire to cook . ", "question_type": 2, "answer": 1, "options": ["True", "False"]}, {"explanation": "added is Verb (past tense)", "question": "Is added, Verb (past tense) in the following sentence?", "comprehension": "Now he whipped some curd and added it to the curry . ", "question_type": 2, "answer": 0, "options": ["True", "False"]}, {"explanation": "the is Determiner", "question": "Select appropiate Determiner from the following to fill the black in the sentence.", "comprehension": "Now he whipped some curd and added it to _____________ curry .", "question_type": 2, "answer": 3, "options": ["some", "those", "The", "the"]}, {"explanation": "strips is Pural Noun", "question": "Select appropiate Pural Noun from the following to fill the black in the sentence.", "comprehension": "Then he cut them into long _____________ .", "question_type": 2, "answer": 2, "options": ["passengers", "chillies", "strips", "guests"]}, {"explanation": "few is Adjective", "question": "Select appropiate Adjective from the following to fill the black in the sentence.", "comprehension": "He also poured a _____________ spoonfuls of coconut oil and decorated the dish with curry leaves .", "question_type": 2, "answer": 2, "options": ["Talented", "new", "few", "good"]}, {"explanation": "fire is Singular or mass Noun", "question": "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.", "comprehension": "He put them in a huge pot and placed it on the _____________ to cook .", "question_type": 2, "answer": 0, "options": ["fire", "lic", "name", "curry"]}, {"explanation": "He is Personal pronoun", "question": "Select appropiate Personal pronoun from the following to fill the black in the sentence.", "comprehension": " _____________ added this paste and some salt to the cooking vegetables .", "question_type": 2, "answer": 3, "options": ["them", "it", "I", "He"]}, {"explanation": "them is Personal pronoun", "question": "Select appropiate Personal pronoun from the following to fill the black in the sentence.", "comprehension": "He took all the vegetable bits , washed _____________ and cleaned them well .", "question_type": 2, "answer": 3, "options": ["I", "me", "it", "them"]}, {"explanation": "vegetable is Singular or mass Noun", "question": "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.", "comprehension": "He took all the _____________ bits , washed them and cleaned them well .", "question_type": 2, "answer": 1, "options": ["lic", "vegetable", "work", "salt"]}, {"explanation": "in is Preposition or subordinating conjunction", "question": "Is in, Singular or mass Noun in the following sentence?", "comprehension": "He put them in a huge pot and placed it on the fire to cook . ", "question_type": 2, "answer": 1, "options": ["True", "False"]}, {"explanation": "strips is Pural Noun", "question": "Is strips, Pural Noun in the following sentence?", "comprehension": "Then he cut them into long strips . ", "question_type": 2, "answer": 0, "options": ["True", "False"]}, {"explanation": "of is Preposition or subordinating conjunction", "question": "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.", "comprehension": "He also poured a few spoonfuls _____________ coconut oil and decorated the dish with curry leaves .", "question_type": 2, "answer": 1, "options": ["that", "of", "out", "in"]}, {"explanation": "guests is Pural Noun", "question": "Is guests, Pural Noun in the following sentence?", "comprehension": "The cook served this new dish to the guests that evening . ", "question_type": 2, "answer": 0, "options": ["True", "False"]}, {"explanation": "placed is Verb (past tense)", "question": "Select appropiate Verb (past tense) from the following to fill the black in the sentence.", "comprehension": "He put them in a huge pot and _____________ it on the fire to cook .", "question_type": 2, "answer": 0, "options": ["placed", "cleaned", "put", "turned"]}, {"explanation": "ready is Adjective", "question": "Select appropiate Adjective from the following to fill the black in the sentence.", "comprehension": "The new dish was _____________ .", "question_type": 2, "answer": 2, "options": ["new", "long", "ready", "fresh"]}, {"explanation": "Answer: The", "question": "In the following sentence identify Determiner.", "comprehension": "The new dish was ready . ", "question_type": 2, "answer": 1, "options": ["new", "The", "was", "ready"]}, {"explanation": "chillies is Pural Noun", "question": "Is chillies, Pural Noun in the following sentence?", "comprehension": "Next , he ground some fresh coconut , green chillies and gar lic together . ", "question_type": 2, "answer": 0, "options": ["True", "False"]}, {"explanation": "cooking is Singular or mass Noun", "question": "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.", "comprehension": "He added this paste and some salt to the _____________ vegetables .", "question_type": 2, "answer": 3, "options": ["board", "fire", "vegetable", "cooking"]}, {"explanation": "He is Personal pronoun", "question": "Is He, Coordinating conjunction in the following sentence?", "comprehension": "He put them in a huge pot and placed it on the fire to cook . ", "question_type": 2, "answer": 1, "options": ["True", "False"]}, {"explanation": "Answer: and", "question": "In the following sentence identify Coordinating conjunction.", "comprehension": "Now he whipped some curd and added it to the curry . ", "question_type": 2, "answer": 0, "options": ["and", "he", "added", "the"]}, {"explanation": "vegetables is Pural Noun", "question": "Select appropiate Pural Noun from the following to fill the black in the sentence.", "comprehension": "He added this paste and some salt to the cooking _____________ .", "question_type": 2, "answer": 2, "options": ["minutes", "bits", "vegetables", "chillies"]}, {"explanation": "A is Determiner", "question": "Select appropiate Determiner from the following to fill the black in the sentence.", "comprehension": " _____________ tempting smell started coming from the pot .", "question_type": 2, "answer": 2, "options": ["those", "a", "A", "the"]}, {"explanation": "started is Verb (past tense)", "question": "Select appropiate Verb (past tense) from the following to fill the black in the sentence.", "comprehension": "A tempting smell _____________ coming from the pot .", "question_type": 2, "answer": 2, "options": ["placed", "turned", "started", "said"]}, {"explanation": "a is Determiner", "question": "Is a, Verb (3rd person singular present tense) in the following sentence?", "comprehension": "He also poured a few spoonfuls of coconut oil and decorated the dish with curry leaves . ", "question_type": 2, "answer": 1, "options": ["True", "False"]}, {"explanation": "took is Verb (past tense)", "question": "Select appropiate Verb (past tense) from the following to fill the black in the sentence.", "comprehension": "He _____________ all the vegetable bits , washed them and cleaned them well .", "question_type": 2, "answer": 2, "options": ["decorated", "was", "took", "placed"]}, {"explanation": "The is Determiner", "question": "Select appropiate Determiner from the following to fill the black in the sentence.", "comprehension": " _____________ new dish was ready .", "question_type": 2, "answer": 0, "options": ["The", "those", "some", "a"]}, {"explanation": "a is Determiner", "question": "Select appropiate Determiner from the following to fill the black in the sentence.", "comprehension": "He also poured _____________ few spoonfuls of coconut oil and decorated the dish with curry leaves .", "question_type": 2, "answer": 1, "options": ["A", "a", "those", "some"]}, {"explanation": "served is Verb (past tense)", "question": "Select appropiate Verb (past tense) from the following to fill the black in the sentence.", "comprehension": "The cook _____________ this new dish to the guests that evening .", "question_type": 2, "answer": 3, "options": ["took", "poured", "started", "served"]}, {"explanation": "Now is Adverb", "question": "Select appropiate Adverb from the following to fill the black in the sentence.", "comprehension": " _____________ he whipped some curd and added it to the curry .", "question_type": 2, "answer": 3, "options": ["well", "Then", "later", "Now"]}, {"explanation": "he is Personal pronoun", "question": "Select appropiate Personal pronoun from the following to fill the black in the sentence.", "comprehension": "Then _____________ cut them into long strips .", "question_type": 2, "answer": 1, "options": ["it", "he", "He", "me"]}, {"explanation": "Next is Adverb", "question": "Select appropiate Adverb from the following to fill the black in the sentence.", "comprehension": " _____________ , he ground some fresh coconut , green chillies and gar lic together .", "question_type": 2, "answer": 1, "options": ["later", "Next", "Now", "also"]}, {"explanation": "coconut is Singular or mass Noun", "question": "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.", "comprehension": "Next , he ground some fresh _____________ , green chillies and gar lic together .", "question_type": 2, "answer": 3, "options": ["plane", "khushboo", "crew", "coconut"]}, {"explanation": "He is Personal pronoun", "question": "Select appropiate Personal pronoun from the following to fill the black in the sentence.", "comprehension": " _____________ also poured a few spoonfuls of coconut oil and decorated the dish with curry leaves .", "question_type": 2, "answer": 0, "options": ["He", "he", "it", "I"]}, {"explanation": "long is Adjective", "question": "Is long, Adjective in the following sentence?", "comprehension": "Then he cut them into long strips . ", "question_type": 2, "answer": 0, "options": ["True", "False"]}, {"explanation": "smell is Singular or mass Noun", "question": "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.", "comprehension": "A tempting _____________ started coming from the pot .", "question_type": 2, "answer": 1, "options": ["crew", "smell", "take-off", "work"]}, {"explanation": "dish is Singular or mass Noun", "question": "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.", "comprehension": "The cook served this new _____________ to the guests that evening .", "question_type": 2, "answer": 3, "options": ["board", "passenger", "coconut", "dish"]}, {"explanation": "smell is Singular or mass Noun", "question": "Is smell, Singular or mass Noun in the following sentence?", "comprehension": "A tempting smell started coming from the pot . ", "question_type": 2, "answer": 0, "options": ["True", "False"]}, {"explanation": "the is Determiner", "question": "Is the, Determiner in the following sentence?", "comprehension": "The cook served this new dish to the guests that evening . ", "question_type": 2, "answer": 0, "options": ["True", "False"]}, {"explanation": "lic is Singular or mass Noun", "question": "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.", "comprehension": "Next , he ground some fresh coconut , green chillies and gar _____________ together .", "question_type": 2, "answer": 0, "options": ["lic", "cook", "salt", "ram"]}], "success": 1}
+{
+  "message": "Successfully uploaded",
+  "questions": [
+    {
+      "explanation": "and is Coordinating conjunction",
+      "question": "Is and, Coordinating conjunction in the following sentence?",
+      "comprehension": "He added this paste and some salt to the cooking vegetables . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "cleaned is Verb (past tense)",
+      "question":
+        "Select appropiate Verb (past tense) from the following to fill the black in the sentence.",
+      "comprehension": "He took all the vegetable bits , washed them and _____________ them well .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["turned", "cleaned", "was", "placed"]
+    },
+    {
+      "explanation": "a is Determiner",
+      "question": "Is a, Determiner in the following sentence?",
+      "comprehension": "He put them in a huge pot and placed it on the fire to cook . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "added is Verb (past tense)",
+      "question": "Is added, Verb (past tense) in the following sentence?",
+      "comprehension": "Now he whipped some curd and added it to the curry . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "the is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension": "Now he whipped some curd and added it to _____________ curry .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["some", "those", "The", "the"]
+    },
+    {
+      "explanation": "strips is Pural Noun",
+      "question":
+        "Select appropiate Pural Noun from the following to fill the black in the sentence.",
+      "comprehension": "Then he cut them into long _____________ .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["passengers", "chillies", "strips", "guests"]
+    },
+    {
+      "explanation": "few is Adjective",
+      "question":
+        "Select appropiate Adjective from the following to fill the black in the sentence.",
+      "comprehension":
+        "He also poured a _____________ spoonfuls of coconut oil and decorated the dish with curry leaves .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["Talented", "new", "few", "good"]
+    },
+    {
+      "explanation": "fire is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension": "He put them in a huge pot and placed it on the _____________ to cook .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["fire", "lic", "name", "curry"]
+    },
+    {
+      "explanation": "He is Personal pronoun",
+      "question":
+        "Select appropiate Personal pronoun from the following to fill the black in the sentence.",
+      "comprehension": " _____________ added this paste and some salt to the cooking vegetables .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["them", "it", "I", "He"]
+    },
+    {
+      "explanation": "them is Personal pronoun",
+      "question":
+        "Select appropiate Personal pronoun from the following to fill the black in the sentence.",
+      "comprehension":
+        "He took all the vegetable bits , washed _____________ and cleaned them well .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["I", "me", "it", "them"]
+    },
+    {
+      "explanation": "vegetable is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension": "He took all the _____________ bits , washed them and cleaned them well .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["lic", "vegetable", "work", "salt"]
+    },
+    {
+      "explanation": "in is Preposition or subordinating conjunction",
+      "question": "Is in, Singular or mass Noun in the following sentence?",
+      "comprehension": "He put them in a huge pot and placed it on the fire to cook . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "strips is Pural Noun",
+      "question": "Is strips, Pural Noun in the following sentence?",
+      "comprehension": "Then he cut them into long strips . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "of is Preposition or subordinating conjunction",
+      "question":
+        "Select appropiate Preposition or subordinating conjunction from the following to fill the black in the sentence.",
+      "comprehension":
+        "He also poured a few spoonfuls _____________ coconut oil and decorated the dish with curry leaves .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["that", "of", "out", "in"]
+    },
+    {
+      "explanation": "guests is Pural Noun",
+      "question": "Is guests, Pural Noun in the following sentence?",
+      "comprehension": "The cook served this new dish to the guests that evening . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "placed is Verb (past tense)",
+      "question":
+        "Select appropiate Verb (past tense) from the following to fill the black in the sentence.",
+      "comprehension": "He put them in a huge pot and _____________ it on the fire to cook .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["placed", "cleaned", "put", "turned"]
+    },
+    {
+      "explanation": "ready is Adjective",
+      "question":
+        "Select appropiate Adjective from the following to fill the black in the sentence.",
+      "comprehension": "The new dish was _____________ .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["new", "long", "ready", "fresh"]
+    },
+    {
+      "explanation": "Answer: The",
+      "question": "In the following sentence identify Determiner.",
+      "comprehension": "The new dish was ready . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["new", "The", "was", "ready"]
+    },
+    {
+      "explanation": "chillies is Pural Noun",
+      "question": "Is chillies, Pural Noun in the following sentence?",
+      "comprehension":
+        "Next , he ground some fresh coconut , green chillies and gar lic together . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "cooking is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension": "He added this paste and some salt to the _____________ vegetables .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["board", "fire", "vegetable", "cooking"]
+    },
+    {
+      "explanation": "He is Personal pronoun",
+      "question": "Is He, Coordinating conjunction in the following sentence?",
+      "comprehension": "He put them in a huge pot and placed it on the fire to cook . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "Answer: and",
+      "question": "In the following sentence identify Coordinating conjunction.",
+      "comprehension": "Now he whipped some curd and added it to the curry . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["and", "he", "added", "the"]
+    },
+    {
+      "explanation": "vegetables is Pural Noun",
+      "question":
+        "Select appropiate Pural Noun from the following to fill the black in the sentence.",
+      "comprehension": "He added this paste and some salt to the cooking _____________ .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["minutes", "bits", "vegetables", "chillies"]
+    },
+    {
+      "explanation": "A is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension": " _____________ tempting smell started coming from the pot .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["those", "a", "A", "the"]
+    },
+    {
+      "explanation": "started is Verb (past tense)",
+      "question":
+        "Select appropiate Verb (past tense) from the following to fill the black in the sentence.",
+      "comprehension": "A tempting smell _____________ coming from the pot .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["placed", "turned", "started", "said"]
+    },
+    {
+      "explanation": "a is Determiner",
+      "question": "Is a, Verb (3rd person singular present tense) in the following sentence?",
+      "comprehension":
+        "He also poured a few spoonfuls of coconut oil and decorated the dish with curry leaves . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "took is Verb (past tense)",
+      "question":
+        "Select appropiate Verb (past tense) from the following to fill the black in the sentence.",
+      "comprehension":
+        "He _____________ all the vegetable bits , washed them and cleaned them well .",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["decorated", "was", "took", "placed"]
+    },
+    {
+      "explanation": "The is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension": " _____________ new dish was ready .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["The", "those", "some", "a"]
+    },
+    {
+      "explanation": "a is Determiner",
+      "question":
+        "Select appropiate Determiner from the following to fill the black in the sentence.",
+      "comprehension":
+        "He also poured _____________ few spoonfuls of coconut oil and decorated the dish with curry leaves .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["A", "a", "those", "some"]
+    },
+    {
+      "explanation": "served is Verb (past tense)",
+      "question":
+        "Select appropiate Verb (past tense) from the following to fill the black in the sentence.",
+      "comprehension": "The cook _____________ this new dish to the guests that evening .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["took", "poured", "started", "served"]
+    },
+    {
+      "explanation": "Now is Adverb",
+      "question": "Select appropiate Adverb from the following to fill the black in the sentence.",
+      "comprehension": " _____________ he whipped some curd and added it to the curry .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["well", "Then", "later", "Now"]
+    },
+    {
+      "explanation": "he is Personal pronoun",
+      "question":
+        "Select appropiate Personal pronoun from the following to fill the black in the sentence.",
+      "comprehension": "Then _____________ cut them into long strips .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["it", "he", "He", "me"]
+    },
+    {
+      "explanation": "Next is Adverb",
+      "question": "Select appropiate Adverb from the following to fill the black in the sentence.",
+      "comprehension":
+        " _____________ , he ground some fresh coconut , green chillies and gar lic together .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["later", "Next", "Now", "also"]
+    },
+    {
+      "explanation": "coconut is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Next , he ground some fresh _____________ , green chillies and gar lic together .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["plane", "khushboo", "crew", "coconut"]
+    },
+    {
+      "explanation": "He is Personal pronoun",
+      "question":
+        "Select appropiate Personal pronoun from the following to fill the black in the sentence.",
+      "comprehension":
+        " _____________ also poured a few spoonfuls of coconut oil and decorated the dish with curry leaves .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["He", "he", "it", "I"]
+    },
+    {
+      "explanation": "long is Adjective",
+      "question": "Is long, Adjective in the following sentence?",
+      "comprehension": "Then he cut them into long strips . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "smell is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension": "A tempting _____________ started coming from the pot .",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["crew", "smell", "take-off", "work"]
+    },
+    {
+      "explanation": "dish is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension": "The cook served this new _____________ to the guests that evening .",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["board", "passenger", "coconut", "dish"]
+    },
+    {
+      "explanation": "smell is Singular or mass Noun",
+      "question": "Is smell, Singular or mass Noun in the following sentence?",
+      "comprehension": "A tempting smell started coming from the pot . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "the is Determiner",
+      "question": "Is the, Determiner in the following sentence?",
+      "comprehension": "The cook served this new dish to the guests that evening . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["True", "False"]
+    },
+    {
+      "explanation": "lic is Singular or mass Noun",
+      "question":
+        "Select appropiate Singular or mass Noun from the following to fill the black in the sentence.",
+      "comprehension":
+        "Next , he ground some fresh coconut , green chillies and gar _____________ together .",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["lic", "cook", "salt", "ram"]
+    }
+  ],
+  "success": 1
+}
