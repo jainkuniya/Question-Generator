@@ -111,6 +111,7 @@ def get_pos_questions_from_sentence(parsed_data, sentence):
     # TODO better limting algo
     questions.extend(get_pos_identify_questions(parsed_data, sentence))
     random.shuffle(questions)
+    print (len(questions))
     questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
     # get identify POS True, False questions
     # TODO better limting algo
@@ -134,4 +135,5 @@ def get_pos_questions(parsed_data):
                         parsed_data[KEY_POS][obj][KEY_SENTENCE]
                         )
                 )
+    random.shuffle(questions)
     return questions
