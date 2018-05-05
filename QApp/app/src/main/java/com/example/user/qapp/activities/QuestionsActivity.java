@@ -68,13 +68,13 @@ public class QuestionsActivity extends AppCompatActivity {
 
         Question question = Singleton.getInstance().getQuestionList().get(mPager.getCurrentItem());
         String answer = Singleton.getInstance().getAnswer(mPager.getCurrentItem());
-        if (question.getQuestionType().equals("1")) {
-            if (answer.equals(question.getAnswer())) {
-                correctAnswer(question);
-            } else {
-                wrongAnswer(question);
-            }
+
+        if (answer.equals(question.getAnswer())) {
+            correctAnswer(question);
+        } else {
+            wrongAnswer(question);
         }
+
 
         btCheck.setText(R.string.next);
     }
@@ -120,6 +120,8 @@ public class QuestionsActivity extends AppCompatActivity {
             Fragment frag;
             if (question.getQuestionType().equals("1")) {
                 frag = new SenCountQueFragment();
+            } else if (question.getQuestionType().equals("1")) {
+                frag = new MCQFragment();
             } else {
                 frag = new MCQFragment();
             }
