@@ -4,7 +4,6 @@ import android.util.SparseArray;
 
 import com.example.user.qapp.model.Question;
 
-import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -40,6 +39,6 @@ public class Singleton {
     }
 
     public String getAnswer(int position) {
-        return answers.get(position);
+        return answers.get(position) == null ? "" : answers.get(position);
     }
 }
