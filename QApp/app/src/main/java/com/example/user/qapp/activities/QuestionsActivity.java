@@ -1,16 +1,19 @@
 package com.example.user.qapp.activities;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.user.qapp.R;
 import com.example.user.qapp.Singleton;
@@ -27,6 +30,7 @@ import butterknife.OnClick;
 
 public class QuestionsActivity extends AppCompatActivity {
 
+    private Context context;
     List<Question> questions;
 
     @BindView(R.id.view_pager)
@@ -57,10 +61,26 @@ public class QuestionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
         ButterKnife.bind(this);
+        context = QuestionsActivity.this;
 
         questions = Singleton.getInstance().getQuestionList();
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
+
+        mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrollStateChanged(int state) {
+            }
+
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                initView();
+            }
+        });
     }
 
 
@@ -132,6 +152,11 @@ public class QuestionsActivity extends AppCompatActivity {
     }
 
     public void submit() {
+        if (mPager.getCurrentItem() == Singleton.getInstance().getQuestionList().size() - 1) {
+            Toast.makeText(context, "Completed!", Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
         mPager.setCurrentItem(mPager.getCurrentItem() + 1, true);
     }
 }
