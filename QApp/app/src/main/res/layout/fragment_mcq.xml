@@ -25,39 +25,32 @@
             android:id="@+id/rg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp">
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp">
 
             <RadioButton
                 android:id="@+id/rbOptionA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Option A"
-                android:textSize="20sp" />
+                android:text="Option A" />
 
             <RadioButton
                 android:id="@+id/rbOptionB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Option B"
-                android:textSize="20sp" />
+                android:text="Option B" />
 
             <RadioButton
                 android:id="@+id/rbOptionC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Option C"
-                android:textSize="20sp" />
+                android:text="Option C" />
 
             <RadioButton
                 android:id="@+id/rbOptionD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Option D"
-                android:textSize="20sp" />
+                android:text="Option D" />
         </RadioGroup>
 
     </LinearLayout>

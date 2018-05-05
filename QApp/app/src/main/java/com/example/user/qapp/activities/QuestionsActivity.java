@@ -9,6 +9,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.user.qapp.R;
@@ -45,6 +46,9 @@ public class QuestionsActivity extends AppCompatActivity {
     @BindView(R.id.tvExplain)
     TextView tvExplain;
 
+    @BindView(R.id.llResult)
+    LinearLayout llResult;
+
 
     PagerAdapter mPagerAdapter;
 
@@ -69,32 +73,25 @@ public class QuestionsActivity extends AppCompatActivity {
         Question question = Singleton.getInstance().getQuestionList().get(mPager.getCurrentItem());
         String answer = Singleton.getInstance().getAnswer(mPager.getCurrentItem());
 
+        llResult.setVisibility(View.VISIBLE);
         if (answer.equals(question.getAnswer())) {
             correctAnswer(question);
         } else {
             wrongAnswer(question);
         }
-
+        tvExplain.setText(question.getExplanation());
         btCheck.setText(R.string.next);
         btCheck.setBackgroundColor(Color.BLUE);
     }
 
     private void correctAnswer(Question question) {
-        tvResult.setVisibility(View.VISIBLE);
         tvResult.setText(R.string.correct_answer);
         tvResult.setTextColor(Color.GREEN);
-
-        tvExplain.setVisibility(View.VISIBLE);
-        tvExplain.setText(question.getExplanation());
     }
 
     private void wrongAnswer(Question question) {
-        tvResult.setVisibility(View.VISIBLE);
         tvResult.setText(R.string.wrong_answer);
         tvResult.setTextColor(Color.RED);
-
-        tvExplain.setVisibility(View.VISIBLE);
-        tvExplain.setText(question.getExplanation());
     }
 
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
@@ -128,8 +125,7 @@ public class QuestionsActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        tvExplain.setVisibility(View.GONE);
-        tvResult.setVisibility(View.GONE);
+        llResult.setVisibility(View.INVISIBLE);
 
         btCheck.setText(R.string.check);
         btCheck.setBackgroundColor(Color.MAGENTA);
