@@ -37,7 +37,7 @@ def get_pos_identify_questions(parsed_data, sentence):
                          options.index(value[KEY_WORD]),
                          options,
                          sentence,
-                         ''
+                         'Answer: ' + value[KEY_WORD]
                          )
                     )
     return questions
