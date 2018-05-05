@@ -30,6 +30,7 @@ import retrofit2.Retrofit;
 public class UploadFile {
     ProgressDialog progressDialog;
     List<Question> questions;
+
     public void uploadFile(final Context context, File file, String title) {
         progressDialog = new ProgressDialog(context);
         progressDialog.setMessage("Loading...");
@@ -60,28 +61,33 @@ public class UploadFile {
             public void onResponse(Call<UploadFileResponse> call, Response<UploadFileResponse> response) {
 
                 UploadFileResponse uploadFileResponse = response.body();
-                int status = uploadFileResponse.getSuccess();
-                questions = uploadFileResponse.getQuestions();
+                try {
+                    int status = uploadFileResponse.getSuccess();
+                    questions = uploadFileResponse.getQuestions();
 
-                if (response.code() == 200) {
-                    if (status == 1) {
+                    if (response.code() == 200) {
+                        if (status == 1) {
 
+                        }
+                        Toast.makeText(context, uploadFileResponse.getMessage(), Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
                     }
-                    Toast.makeText(context, uploadFileResponse.getMessage(), Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(context, "Something went wrong on server.", Toast.LENGTH_SHORT).show();
+                    Singleton.getInstance().setQuestionList(questions);
+                    Intent intent = new Intent(context, QuestionsActivity.class);
+                    context.startActivity(intent);
+                    progressDialog.dismiss();
+                } catch (Exception e) {
+                    Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
                 }
-                Singleton.getInstance().setQuestionList(questions);
-                Intent intent=new Intent(context,QuestionsActivity.class);
-                context.startActivity(intent);
-                progressDialog.dismiss();
             }
+
             public void onFailure(Call<UploadFileResponse> call, Throwable t) {
                 Log.d("onFailure upload", t.toString());
                 progressDialog.dismiss();
-                Intent intent=new Intent(context,QuestionsActivity.class);
-                intent.putExtra("questions",(ArrayList<Question>) questions);
+                Intent intent = new Intent(context, QuestionsActivity.class);
+                intent.putExtra("questions", (ArrayList<Question>) questions);
                 context.startActivity(intent);
 
                 Toast.makeText(context, "Failed to connect to server", Toast.LENGTH_SHORT).show();
