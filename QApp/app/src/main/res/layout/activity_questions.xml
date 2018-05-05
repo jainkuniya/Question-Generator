@@ -14,7 +14,7 @@
         <com.example.user.qapp.utils.NonSwipeableViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="300dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/tvResult"
