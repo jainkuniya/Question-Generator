@@ -58,6 +58,7 @@ def get_pos_identify_true_false_questions(parsed_data, sentence):
         question_sentence = get_pos_identify_true_false_question_sentence(value[KEY_WORD], tag)
         if (secret == 1):
             tag_list = list(POS_ABBREVATIONS.keys())
+            [i for i in tag_list if i.attribute != tag]
             wrong_tag = tag_list[random.randint(0,len(tag_list)-1)]
             question_sentence = get_pos_identify_true_false_question_sentence(value[KEY_WORD], POS_ABBREVATIONS.get(wrong_tag))
         explanation = value[KEY_WORD] + " is " + tag
