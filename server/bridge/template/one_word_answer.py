@@ -7,4 +7,5 @@ def generate_one_word_question(question, answer):
             KEY_QUESTION_TYPE: QUESTION_TYPE,
             KEY_QUESTION: question,
             KEY_ANSWER: answer,
+            KEY_EXPLANATION: 'Answer: ' + answer
         }
