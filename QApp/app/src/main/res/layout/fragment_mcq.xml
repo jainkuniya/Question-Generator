@@ -10,13 +10,16 @@
         android:orientation="vertical"
         tools:context=".fragments.MCQFragment">
 
-        <include layout="@layout/textview_question" />
+        <include
+            layout="@layout/textview_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <include
             layout="@layout/question_comprehension"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp" />
 
         <RadioGroup
             android:id="@+id/rg"

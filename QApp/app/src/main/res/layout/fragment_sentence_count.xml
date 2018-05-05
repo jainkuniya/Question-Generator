@@ -8,14 +8,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include layout="@layout/textview_question" />
+        <include
+            layout="@layout/textview_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/etAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:inputType="numberSigned"/>
+            android:inputType="numberSigned" />
 
     </LinearLayout>
 </ScrollView>
