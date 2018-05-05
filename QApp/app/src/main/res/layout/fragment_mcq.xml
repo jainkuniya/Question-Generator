@@ -12,7 +12,11 @@
 
         <include layout="@layout/textview_question" />
 
-        <include layout="@layout/question_comprehension" />
+        <include
+            layout="@layout/question_comprehension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
 
         <RadioGroup
             android:id="@+id/rg"

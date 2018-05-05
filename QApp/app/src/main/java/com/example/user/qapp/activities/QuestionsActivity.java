@@ -75,8 +75,8 @@ public class QuestionsActivity extends AppCompatActivity {
             wrongAnswer(question);
         }
 
-
         btCheck.setText(R.string.next);
+        btCheck.setBackgroundColor(Color.BLUE);
     }
 
     private void correctAnswer(Question question) {
@@ -141,6 +141,7 @@ public class QuestionsActivity extends AppCompatActivity {
         tvResult.setVisibility(View.GONE);
 
         btCheck.setText(R.string.check);
+        btCheck.setBackgroundColor(Color.MAGENTA);
     }
 
     public void submit() {
