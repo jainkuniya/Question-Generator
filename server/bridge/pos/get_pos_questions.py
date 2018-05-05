@@ -44,7 +44,7 @@ def get_pos_identify_questions(parsed_data, sentence):
     return questions
 
 def get_pos_identify_true_false_question_sentence(word, tag):
-    return "Is " + word + ", " + tag + " in the following sentence?"
+    return 'Is "' + word + '", ' + tag + ' in the following sentence?'
 
 def get_pos_identify_true_false_questions(parsed_data, sentence):
     questions = []
