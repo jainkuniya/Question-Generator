@@ -1,0 +1,96 @@
+{
+  "message": "Successfully uploaded",
+  "questions": [
+    {
+      "explanation": "Answer: down",
+      "question": "In the following sentence identify Adverb.",
+      "comprehension":
+        "Once when a lion , the king of the jungle , was asleep , a little mouse began running up and down on him . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["mouse", "down", "and", "when"]
+    },
+    {
+      "explanation": "Answer: awakened",
+      "question": "In the following sentence identify Verb (past tense).",
+      "comprehension":
+        "This soon awakened the lion , who placed his huge paw on the mouse , and opened his big jaws to swallow him . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["awakened", "soon", "to", "on"]
+    },
+    {
+      "explanation": "Answer: lion",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "This soon awakened the lion , who placed his huge paw on the mouse , and opened his big jaws to swallow him . ",
+      "question_type": 2,
+      "answer": 3,
+      "options": ["big", "huge", "soon", "lion"]
+    },
+    {
+      "explanation": "Answer: his",
+      "question": "In the following sentence identify Possessive pronoun.",
+      "comprehension":
+        "This soon awakened the lion , who placed his huge paw on the mouse , and opened his big jaws to swallow him . ",
+      "question_type": 2,
+      "answer": 1,
+      "options": ["mouse", "his", "to", "and"]
+    },
+    {
+      "explanation": "Answer: began",
+      "question": "In the following sentence identify Verb (past tense).",
+      "comprehension":
+        "Once when a lion , the king of the jungle , was asleep , a little mouse began running up and down on him . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["when", "running", "began", "little"]
+    },
+    {
+      "explanation": "Answer: jaws",
+      "question": "In the following sentence identify Pural Noun.",
+      "comprehension":
+        "This soon awakened the lion , who placed his huge paw on the mouse , and opened his big jaws to swallow him . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["jaws", "paw", "and", "huge"]
+    },
+    {
+      "explanation": "Answer: him",
+      "question": "In the following sentence identify Personal pronoun.",
+      "comprehension":
+        "Once when a lion , the king of the jungle , was asleep , a little mouse began running up and down on him . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["king", "began", "him", "of"]
+    },
+    {
+      "explanation": "Answer: king",
+      "question": "In the following sentence identify Singular or mass Noun.",
+      "comprehension":
+        "Once when a lion , the king of the jungle , was asleep , a little mouse began running up and down on him . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["king", "and", "the", "Once"]
+    },
+    {
+      "explanation": "Answer: big",
+      "question": "In the following sentence identify Adjective.",
+      "comprehension":
+        "This soon awakened the lion , who placed his huge paw on the mouse , and opened his big jaws to swallow him . ",
+      "question_type": 2,
+      "answer": 2,
+      "options": ["the", "soon", "big", "his"]
+    },
+    {
+      "explanation": "Answer: running",
+      "question": "In the following sentence identify Verb (present participle).",
+      "comprehension":
+        "Once when a lion , the king of the jungle , was asleep , a little mouse began running up and down on him . ",
+      "question_type": 2,
+      "answer": 0,
+      "options": ["running", "when", "and", "lion"]
+    }
+  ],
+  "success": 1
+}
