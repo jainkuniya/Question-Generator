@@ -111,27 +111,35 @@ def get_pos_questions_from_sentence(parsed_data, sentence):
     # get identify POS questions
     # TODO better limting algo
     try:
-        questions.extend(get_pos_identify_questions(parsed_data, sentence))
+        pos_identify_questions = get_pos_identify_questions(parsed_data, sentence)
+        random.shuffle(pos_identify_questions)
+        pos_identify_questions = pos_identify_questions[:int(math.ceil(math.log(len(pos_identify_questions), 2)))]
+        questions.extend(pos_identify_questions)
         random.shuffle(questions)
-        questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
     except:
-        print ("Error in limiting")
+        print ("Error in limiting pos_identify_questions: " + str(len(pos_identify_questions)))
     # get identify POS True, False questions
     # TODO better limting algo
+    pos_identify_true_false_questions = []
     try:
-        questions.extend(get_pos_identify_true_false_questions(parsed_data, sentence))
+        pos_identify_true_false_questions = get_pos_identify_true_false_questions(parsed_data, sentence)
+        random.shuffle(pos_identify_true_false_questions)
+        pos_identify_true_false_questions = pos_identify_true_false_questions[:int(math.ceil(math.log(len(pos_identify_true_false_questions), 2)))]
+        questions.extend(pos_identify_true_false_questions)
         random.shuffle(questions)
-        questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
     except:
-        print ("Error in limiting")
+        print ("Error in limiting pos_identify_true_false_questions: " + str(len(pos_identify_true_false_questions)))
     # get pos fill in the blanks questions
     # TODO better limting algo
+    pos_fill_in_the_blanks_questions = []
     try:
-        questions.extend(get_pos_fill_in_the_blanks_questions(parsed_data, sentence))
+        pos_fill_in_the_blanks_questions = get_pos_fill_in_the_blanks_questions(parsed_data, sentence)
+        random.shuffle(pos_fill_in_the_blanks_questions)
+        pos_fill_in_the_blanks_questions = pos_fill_in_the_blanks_questions[:int(math.ceil(math.log(len(pos_fill_in_the_blanks_questions), 2)))]
+        questions.extend(pos_fill_in_the_blanks_questions)
         random.shuffle(questions)
-        questions = questions[:int(math.ceil(math.log(len(questions), 2)))]
     except:
-        print ("Error in limiting")
+        print ("Error in limiting pos_fill_in_the_blanks_questions:", str(len(pos_fill_in_the_blanks_questions)))
     return questions
 
 def get_pos_questions(parsed_data):
